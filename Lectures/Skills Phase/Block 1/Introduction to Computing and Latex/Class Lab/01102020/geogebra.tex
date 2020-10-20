@@ -1,0 +1,17 @@
+\documentclass[10pt]{article}
+\usepackage{pgf,tikz}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+	\definecolor{ccqqcc}{rgb}{0.8,0,0.8}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\clip(-100.3,0.92) rectangle (-4.3,1.1);
+	\draw (1.86,4.2) node[anchor=north west] {};
+	\draw[color=ccqqcc, smooth,samples=100,domain=-4.3:-4.3] plot(\x,{sin(((\x)+3.1415926535)*180/pi)});
+	\end{tikzpicture}
+\end{document}
