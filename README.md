@@ -5,6 +5,6 @@ The African Institute for Mathematical Sciences is a Pan African Network of Cent
 AIMS Rwanda is the 6th Centre of Excellence in Africa.
 
 ### This repo contains lecture materials and code base for:
-  -Skills Phase 
-  -Review Phase
+  - Skills Phase 
+  - Review Phase
 
