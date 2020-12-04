@@ -1,0 +1,1 @@
+write.table(data,file="dataOther.csv",sep=",")
