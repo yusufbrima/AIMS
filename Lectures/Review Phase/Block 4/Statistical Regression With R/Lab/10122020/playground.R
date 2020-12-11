@@ -12,3 +12,9 @@ model2 = lm(charges ~ age + bmi+ sex + region,data =  data)
 summary(model2)
 
 
+
+model3 = lm(charges ~ age + bmi+ sex + region,data =  data)
+
+summary(model3)
+
+
