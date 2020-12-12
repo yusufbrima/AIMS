@@ -37,7 +37,7 @@
 %%%%%%%%%%%%%%%%%%%%% students data %%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\student}{Yusuf Brima}
 \newcommand{\course}{Operations Research}
-\newcommand{\assignment}{1}
+\newcommand{\assignment}{2}
 
 %%%%%%%%%%%%%%%%%%% using theorem style %%%%%%%%%%%%%%%%%%%%
 \newtheorem{thm}{Theorem}
@@ -78,6 +78,40 @@ Name: \student \hfill Assignment Number: \assignment\\[0.1cm]
 Course: \course \hfill Date: \today\\
 \rule{17cm}{0.05cm}
 \vspace{1.0cm}
+\section*{Question 1}
+\textbf{Solution}
+\begin{enumerate}
+    \item[(a)] Decision variables:\\
+        We let $x_A$ denote the units of product A supposed to be produced.\\
+        $x_B$ denote the units of product B supposed to be produced.\\
+        $
+            y_1 = \begin{cases}
+                1               & \text{if additional time is used} \\\
+                0               & \text{Otherwise} \\
+            \end{cases}
+        $\\
+        $
+            y_2 = \begin{cases}
+                1               & \text{if more than 10 units of product A is produced} \\\
+                0               & \text{Otherwise} \\
+            \end{cases}
+        $
+     \item[(b)] Model for the Mixed Integer Programming Problem\\
+        \begin{equation}
+            \begin{aligned}
+            \text{Maximize } \quad    z &=  200x_A + 400x_B – 1200y_1\\
+            \text{subject to }\quad &
+                \begin{array}{c}
+                     2x_A + 3x_B    \leq  40 + 8y_1 \text{ (limited time)}\\
+                     y_2 \geq \frac{1}{100} (x_A – 10)  \text{ (more than ten A product)}\\
+                     x_B \geq 5y_2  \text{ (at least 5 B)}\\
+                     x_A \geq 0, x_B \geq 0, integer; y_1, y_2 \in \{0,1\}
+
+                \end{array}
+            \end{aligned}
+            \label{eq:problem_2}
+        \end{equation}
+\end{enumerate}
 \section*{Question 2}
 Consider the problem
 \begin{equation}
@@ -92,9 +126,26 @@ Consider the problem
     \end{aligned}
     \label{eq:problem_2}
 \end{equation}
+	\textbf{Solution}\\
+		The dual problem is given by:
+		\begin{equation}
+            \begin{aligned}
+            \text{Maximize } \quad   w &= 4v_1 + v_2  \\
+            \text{subject to }\quad &
+                \begin{array}{c}
+                    v_1 + 2v_2  \leq 3 \\
+                   2v_1 – v_2 \leq -1 \\
+                   v_1 + v_2 \geq 1\\
+                    v_1 \leq 0, v_2  \geq 0
+                \end{array}
+            \end{aligned}
+            \label{eq:problem_2}
+        \end{equation}
 \begin{enumerate}
-	\item[(a)] Is the point $(x_1, x_2, x_3) = (\frac{6}{5}, \frac{7}{5}, 0)$ an optimal solution?
-	\item[(b)] Is the point $(x_1, x_2, x_3) = (\frac{1}{2}, 0, 0)$ an optimal solution?
+	\item[(a)] Is the point $(x_1, x_2, x_3) = (\frac{6}{5}, \frac{7}{5}, 0)$ an optimal solution?\\
+	   \textbf {No}. $x_1= \frac{6}{5}$ \xrightarrow{} $v_{s1} = 0$ and $x_2 = \frac{7}{5}$ \xrightarrow[]{} $v_{s2} = 0$. This means that $v_1 = \frac{1}{5}$ and $v_2 = \frac{7}{5}$ which do not satisfy the dual constraints.
+	\item[(b)] Is the point $(x_1, x_2, x_3) = (\frac{1}{2}, 0, 0)$ an optimal solution?\\
+	\textbf{Yes}, $x_1 = \frac{1}{2}$ \xrightarrow[]{}  $v_{s1} = 0$ and $x_{s1} =\frac{7}{2}$  \xrightarrow[]{}  $v_1 = 0$.
 \end{enumerate}
 \section*{Question 3}
 Study the following LP problem using duality concept.

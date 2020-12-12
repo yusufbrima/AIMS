@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.26)  11 DEC 2020 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.26)  12 DEC 2020 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -769,7 +769,14 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count308
 \l__pdf_internal_box=\box65
 )
-(./brima_yusuf_OR2.aux)
+(./brima_yusuf_OR2.aux
+
+LaTeX Warning: Label `eq:problem_2' multiply defined.
+
+
+LaTeX Warning: Label `eq:problem_2' multiply defined.
+
+)
 \openout1 = `brima_yusuf_OR2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -788,8 +795,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
-
-(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count309
 \scratchdimen=\dimen305
@@ -889,40 +895,124 @@ Overfull \hbox (2.61105pt too wide) in paragraph at lines 75--81
  []
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 109.
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 102.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 106.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 137.
 
 [1
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.146 ...f {No}. $x_1= \frac{6}{5}$ \xrightarrow{}
+                                                   $v_{s1} = 0$ and $x_2 = \...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.146 ...o}. $x_1= \frac{6}{5}$ \xrightarrow{} $v_
+                                                  {s1} = 0$ and $x_2 = \frac...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.146 ... and $x_2 = \frac{7}{5}$ \xrightarrow[]{}
+                                                   $v_{s2} = 0$. This means ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.146 ... $x_2 = \frac{7}{5}$ \xrightarrow[]{} $v_
+                                                  {s2} = 0$. This means that...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.148 ...es}, $x_1 = \frac{1}{2}$ \xrightarrow[]{}
+                                                    $v_{s1} = 0$ and $x_{s1}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.148 ...$x_1 = \frac{1}{2}$ \xrightarrow[]{}  $v_
+                                                  {s1} = 0$ and $x_{s1} =\fr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.148 ...d $x_{s1} =\frac{7}{2}$  \xrightarrow[]{}
+                                                    $v_1 = 0$.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.148 ...{s1} =\frac{7}{2}$  \xrightarrow[]{}  $v_
+                                                  1 = 0$.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 160.
+
+[2] [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
  (./brima_yusuf_OR2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `brima_yusuf_OR2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 21862 strings out of 480608
- 392911 string characters out of 5903630
- 712148 words of memory out of 5000000
+ 21866 strings out of 480608
+ 392945 string characters out of 5903630
+ 714187 words of memory out of 5000000
  37300 multiletter control sequences out of 15000+600000
  539345 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,12n,81p,3243b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,14n,81p,3243b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on brima_yusuf_OR2.pdf (2 pages, 63230 bytes).
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
+cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on brima_yusuf_OR2.pdf (3 pages, 83589 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
+ 67 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
