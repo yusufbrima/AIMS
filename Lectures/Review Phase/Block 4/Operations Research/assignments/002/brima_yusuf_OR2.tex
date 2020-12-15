@@ -1,0 +1,218 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Template for AIMS Rwanda Assignments         %%%              %%%
+%%% Author:   AIMS Rwanda tutors                             %%%   ###        %%%
+%%% Email: tutors2017-18@aims.ac.rw                               %%%   ###        %%%
+%%% Copyright: This template was designed to be used for    %%% #######      %%%
+%%% the assignments at AIMS Rwanda during the academic year %%%   ###        %%%
+%%% 2017-2018.                                              %%%   #########  %%%
+%%% You are free to alter any part of this document for     %%%   ###   ###  %%%
+%%% yourself and for distribution.                          %%%   ###   ###  %%%
+%%%                                                         %%%              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%% Ensure that you do not write the questions before each of the solutions because it is not necessary. %%%%%% 
+
+\documentclass[12pt,a4paper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% packages %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{float}
+\usepackage[all]{xy}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{psfrag}
+\usepackage{placeins}
+%%%%%%%%%%%%%%%%%%%%% students data %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\student}{Yusuf Brima}
+\newcommand{\course}{Operations Research}
+\newcommand{\assignment}{2}
+
+%%%%%%%%%%%%%%%%%%% using theorem style %%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{exa}[thm]{Example}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{coro}[thm]{Corollary}
+\newtheorem{quest}{Question}[section]
+
+%%%%%%%%%%%%%%  Shortcut for usual set of numbers  %%%%%%%%%%%
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%% title page %%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=\textwidth]{aims_rwanda.jpg}
+%\end{figure}
+\begin{center}
+\textbf{AFRICAN INSTITUTE FOR MATHEMATICAL SCIENCES \\[0.5cm]
+(AIMS RWANDA, KIGALI)}
+\vspace{1.0cm}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%% assignment information %%%%%%%%%%%%%%%%
+\noindent
+\rule{17cm}{0.2cm}\\[0.3cm]
+Name: \student \hfill Assignment Number: \assignment\\[0.1cm]
+Course: \course \hfill Date: \today\\
+\rule{17cm}{0.05cm}
+\vspace{1.0cm}
+\section*{Question 1}
+\textbf{Solution}
+\begin{enumerate}
+    \item[(a)] Decision variables:\\
+        We let $x_A$ denote the units of product A supposed to be produced.\\
+        $x_B$ denote the units of product B supposed to be produced.\\
+        $
+            y_1 = \begin{cases}
+                1               & \text{if additional time is used} \\\
+                0               & \text{Otherwise} \\
+            \end{cases}
+        $\\
+        $
+            y_2 = \begin{cases}
+                1               & \text{if more than 10 units of product A is produced} \\\
+                0               & \text{Otherwise} \\
+            \end{cases}
+        $
+     \item[(b)] Model for the Mixed Integer Programming Problem\\
+        \begin{equation}
+            \begin{aligned}
+            \text{Maximize } \quad    z &=  200x_A + 400x_B – 1200y_1\\
+            \text{subject to }\quad &
+                \begin{array}{c}
+                     2x_A + 3x_B    \leq  40 + 8y_1 \text{ (limited time)}\\
+                     y_2 \geq \frac{1}{100} (x_A – 10)  \text{ (more than ten A product)}\\
+                     x_B \geq 5y_2  \text{ (at least 5 B)}\\
+                     x_A \geq 0, x_B \geq 0, integer; y_1, y_2 \in \{0,1\}
+
+                \end{array}
+            \end{aligned}
+            \label{eq:problem_2}
+        \end{equation}
+\end{enumerate}
+\section*{Question 2}
+Consider the problem
+\begin{equation}
+    \begin{aligned}
+    \text{Minimize } \quad    z &= 3x_1 - x_2 + x_3 \\
+    \text{subject to }\quad &
+        \begin{array}{c}
+            x_1 +2 x_2 \leq 4 \\
+           2 x_1 - x_2 + x_3 \geq 1 \\
+            x_1,x_2 \geq 0, x_3 \leq 0
+        \end{array}
+    \end{aligned}
+    \label{eq:problem_2}
+\end{equation}
+	\textbf{Solution}\\
+		The dual problem is given by:
+		\begin{equation}
+            \begin{aligned}
+            \text{Maximize } \quad   w &= 4v_1 + v_2  \\
+            \text{subject to }\quad &
+                \begin{array}{c}
+                    v_1 + 2v_2  \leq 3 \\
+                   2v_1 – v_2 \leq -1 \\
+                   v_1 + v_2 \geq 1\\
+                    v_1 \leq 0, v_2  \geq 0
+                \end{array}
+            \end{aligned}
+            \label{eq:problem_2}
+        \end{equation}
+\begin{enumerate}
+	\item[(a)] Is the point $(x_1, x_2, x_3) = (\frac{6}{5}, \frac{7}{5}, 0)$ an optimal solution?\\
+	   \textbf {No}. $x_1= \frac{6}{5}$ \xrightarrow{} $v_{s1} = 0$ and $x_2 = \frac{7}{5}$ \xrightarrow[]{} $v_{s2} = 0$. This means that $v_1 = \frac{1}{5}$ and $v_2 = \frac{7}{5}$ which do not satisfy the dual constraints.
+	\item[(b)] Is the point $(x_1, x_2, x_3) = (\frac{1}{2}, 0, 0)$ an optimal solution?\\
+	\textbf{Yes}, $x_1 = \frac{1}{2}$ \xrightarrow[]{}  $v_{s1} = 0$ and $x_{s1} =\frac{7}{2}$  \xrightarrow[]{}  $v_1 = 0$.
+\end{enumerate}
+\section*{Question 3}
+Study the following LP problem using duality concept.
+\begin{equation}
+    \begin{aligned}
+    \text{Maximize } \quad    z &= z = c_1x_1 + c_2x_2 \\
+    \text{subject to }\quad &
+        \begin{array}{c}
+            –x_1 + x_2  \leq 1 \\
+            x_1 + 2x_2  \leq 2 \\
+           2x_1 + x_2 \geq 0 \\
+           2x_1 – 2x_2  \leq 1 \\
+            x_1,x_2 \geq 0
+        \end{array}
+    \end{aligned}
+    \label{eq:problem_3}
+\end{equation}
+\begin{enumerate}
+	\item[(a)] Determine the primal solution where the dual variables are given by the vector\\
+		$v = (0, 1/3, 0, 2/3)^\text{T}$\\
+		By using Complementary Slackness \eqref{eq_comp_slack}
+		\begin{equation}
+			\bar{W}^\text{T}(B - A\bar{X}) = 0 \quad  \text{or} \quad  \bar{X}^\text{T}(A^\text{T}\bar{W} - C) = 0
+			\label{eq_comp_slack}
+		\end{equation}
+		Therefore, $\bar{W}^\text{T}(B - A\bar{X}) = 0 $ is solved as follows:
+		\begin{align*}
+				0(1 - (-x_1 + x_2)) &= 0\\
+				\frac{1}{3} (2  - (x_1 + 2x_2) &= 0\\
+				0(0 - (2x_1 + x_2)) &= 0\\
+				\frac{2}{3} (1 - (2x_1 - 2x_2)) &= 0\\
+		\end{align*}
+		We therefore,  get the following system of simultaneous equations as stated below.
+		\begin{align*}
+				x_1 + 2x_2  &= 2 \\
+				 2x_1 - 2x_2 &= 1
+				 \label{eq:pset_3_sim}
+		\end{align*}
+		Solving the above simultaneous equation where $x_1 = 1$ and $x_2 = \frac{1}{2}$; the solution for the primal is thus:
+			$\bar{X}^\text{T} = (1,\frac{1}{2})^\text{T}$
+	\item[(b)] Determine the values of $c_1$ and $c_2$ for which the primal solution is optimal.\\
+		New $ \bar{X}^\text{T}(A^\text{T}\bar{W} - C) = 0$\\
+		To solve for $c_1$ and $c_2$, we first determine the dual to the Linear Programming Problem in \eqref{eq:problem_3} as follows:
+\begin{equation}
+    \begin{aligned}
+    \text{Minimize }  \quad  v &=  w_1 + 2w_2 + 0w_3 + w4 \\
+    \text{subject to }\quad &
+        \begin{array}{c}
+        	   -w_1 + w_2 + 2w_3 + 2w_4 \geq c_1 \\
+        	   w_1 + 2w_2 + w_3 - 2w_4 \geq c_2 \\
+        	   w_1,w_2 \geq 0, w_3 \leq 0, w_4 \geq 0
+        \end{array}
+    \end{aligned}
+    \label{eq:problem_3_b}
+\end{equation}
+$\bar{X}^\text{T}(A^\text{T}W - C) = 0 $\\
+From \eqref{eq:problem_3_b}, where therefore solve for $c_1$ and $c_2$ as follows:
+\begin{align*}
+		\text{(1)} 1(-w_1 + w_2 + 3w_3 + 2w_4 - c_1) &=0\\
+		(0 + \frac{1}{3} + 0 + \frac{4}{3}  - c_1) &= 0\\
+		c_1 &= \frac{5}{3}
+\end{align*}
+
+\begin{align*}
+		\text{(2)} \frac{1}{2}(w_1 + 2w_2 + w_3 - 2w_4 - c_2) &= 0\\
+					(0 + \frac{2}{3} + 0  - \frac{4}{3} - c_2) &= 0\\
+					c_2 &= \frac{-2}{3}
+\end{align*}
+\end{enumerate}
+\end{document}
