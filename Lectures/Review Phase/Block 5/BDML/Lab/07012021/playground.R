@@ -1,3 +1,3 @@
-library(cluster) #Loading the clster dataset
+library(cluster) #Loading the cluster dataset
 
 
