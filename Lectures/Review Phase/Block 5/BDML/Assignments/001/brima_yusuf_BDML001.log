@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.26)  10 JAN 2021 20:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.26)  14 JAN 2021 08:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,6 +23,17 @@ File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
+
+! LaTeX Error: Two \documentclass or \documentstyle commands.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \documentclass[12pt,a4paper]{
+                                  article}
+The document may only declare one class.
+
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
@@ -747,22 +758,22 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 (./brima_yusuf_BDML001.aux)
 \openout1 = `brima_yusuf_BDML001.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -786,25 +797,25 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 60
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 61
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.47998pt on input line 60.
+Package xypdf Info: Line width: 0.47998pt on input line 61.
 
 ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
@@ -842,7 +853,7 @@ ABD: EveryShipout initializing macros
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring OFF on input line 60.
+Package hyperref Info: Link coloring OFF on input line 61.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -855,9 +866,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count313
 )
-LaTeX Info: Redefining \ref on input line 60.
-LaTeX Info: Redefining \pageref on input line 60.
-LaTeX Info: Redefining \nameref on input line 60.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
  (./brima_yusuf_BDML001.out) (./brima_yusuf_BDML001.out)
 \@outlinefile=\write6
 \openout6 = `brima_yusuf_BDML001.out'.
@@ -865,7 +876,7 @@ LaTeX Info: Redefining \nameref on input line 60.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-Overfull \hbox (2.61105pt too wide) in paragraph at lines 75--81
+Overfull \hbox (2.61105pt too wide) in paragraph at lines 76--82
 []  
  []
 
@@ -874,107 +885,36 @@ Non-PDF special ignored!
 <special> header=psfrag.pro
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3] [4]
-<./graphics/q21.png, id=45, 843.15pt x 843.15pt>
-File: ./graphics/q21.png Graphic file (type png)
-<use ./graphics/q21.png>
-Package pdftex.def Info: ./graphics/q21.png  used on input line 255.
-(pdftex.def)             Requested size: 480.00868pt x 420.00438pt.
- [5 <./graphics/q21.png>]
-<./graphics/q24.png, id=53, 843.15pt x 843.15pt>
-File: ./graphics/q24.png Graphic file (type png)
-<use ./graphics/q24.png>
-Package pdftex.def Info: ./graphics/q24.png  used on input line 265.
-(pdftex.def)             Requested size: 420.00438pt x 350.00365pt.
- [6 <./graphics/q24.png>] [7] [8]
-<./graphics/q41.png, id=72, 843.15pt x 843.15pt>
-File: ./graphics/q41.png Graphic file (type png)
-<use ./graphics/q41.png>
-Package pdftex.def Info: ./graphics/q41.png  used on input line 451.
-(pdftex.def)             Requested size: 520.00726pt x 450.00653pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
 
-Overfull \hbox (36.3104pt too wide) in paragraph at lines 451--452
-[][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9 <./graphics/q41.png>]
-<./graphics/q43b.png, id=80, 843.15pt x 843.15pt>
-File: ./graphics/q43b.png Graphic file (type png)
-<use ./graphics/q43b.png>
-Package pdftex.def Info: ./graphics/q43b.png  used on input line 481.
-(pdftex.def)             Requested size: 370.00937pt x 310.00507pt.
- [10 <./graphics/q43b.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
-
- []
-
-<./graphics/q45.png, id=89, 843.15pt x 843.15pt>
-File: ./graphics/q45.png Graphic file (type png)
-<use ./graphics/q45.png>
-Package pdftex.def Info: ./graphics/q45.png  used on input line 505.
-(pdftex.def)             Requested size: 460.00296pt x 340.00722pt.
-[11 <./graphics/q45.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
-
- []
-
-<./graphics/q47.png, id=96, 843.15pt x 843.15pt>
-File: ./graphics/q47.png Graphic file (type png)
-<use ./graphics/q47.png>
-Package pdftex.def Info: ./graphics/q47.png  used on input line 526.
-(pdftex.def)             Requested size: 420.00438pt x 310.00507pt.
-<./graphics/q47b.png, id=98, 843.15pt x 843.15pt>
-File: ./graphics/q47b.png Graphic file (type png)
-<use ./graphics/q47b.png>
-Package pdftex.def Info: ./graphics/q47b.png  used on input line 533.
-(pdftex.def)             Requested size: 420.00438pt x 320.0015pt.
-[12 <./graphics/q47.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 538--539
-
- []
-
-[13 <./graphics/q47b.png>] [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 560.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 560.
- (./brima_yusuf_BDML001.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 560.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 560.
+(./brima_yusuf_BDML001.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `brima_yusuf_BDML001.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 560.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 21076 strings out of 480608
- 376648 string characters out of 5903630
- 677819 words of memory out of 5000000
- 36493 multiletter control sequences out of 15000+600000
- 542084 words of font info for 66 fonts, out of 8000000 for 9000
+ 20982 strings out of 480608
+ 375250 string characters out of 5903630
+ 665819 words of memory out of 5000000
+ 36442 multiletter control sequences out of 15000+600000
+ 539839 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,18n,60p,3247b,549s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
-l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texliv
-e/2020/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on brima_yusuf_BDML001.pdf (14 pages, 569521 bytes).
+ 60i,7n,60p,3247b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
+cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on brima_yusuf_BDML001.pdf (1 page, 67969 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 49 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
+ 3 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
