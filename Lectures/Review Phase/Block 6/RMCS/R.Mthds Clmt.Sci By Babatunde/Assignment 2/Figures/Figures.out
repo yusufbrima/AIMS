@@ -1,0 +1,11 @@
+\BOOKMARK [1][-]{section.1}{Time Series: Trended TMPD}{}% 1
+\BOOKMARK [1][-]{section.2}{Time Series: Detrended TMPD}{}% 2
+\BOOKMARK [1][-]{section.3}{Time Series PRED}{}% 3
+\BOOKMARK [1][-]{section.4}{Autocorrelation: Detrended TMPD}{}% 4
+\BOOKMARK [1][-]{section.5}{Autocorrelation: PRED}{}% 5
+\BOOKMARK [1][-]{section.6}{CrossCorrelation: DTMPD,PRED}{}% 6
+\BOOKMARK [1][-]{section.7}{Wavelet Analysis}{}% 7
+\BOOKMARK [2][-]{subsection.7.1}{Wavelet}{section.7}% 8
+\BOOKMARK [2][-]{subsection.7.2}{Detrended Wavelet}{section.7}% 9
+\BOOKMARK [2][-]{subsection.7.3}{Coherence Wavelet}{section.7}% 10
+\BOOKMARK [2][-]{subsection.7.4}{Detrended Coherence Wavelet}{section.7}% 11

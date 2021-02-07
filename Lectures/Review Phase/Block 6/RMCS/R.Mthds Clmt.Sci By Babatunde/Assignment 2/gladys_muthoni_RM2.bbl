@@ -1,0 +1,42 @@
+\begin{thebibliography}{1}
+
+\bibitem{daubechies1990wavelet}
+Ingrid Daubechies.
+\newblock The wavelet transform, time-frequency localization and signal
+  analysis.
+\newblock {\em IEEE transactions on information theory}, 36(5):961--1005, 1990.
+
+\bibitem{hamilton1994time}
+James~Douglas Hamilton.
+\newblock {\em Time series analysis}, volume~2.
+\newblock Princeton university press Princeton, NJ, 1994.
+
+\bibitem{jolliffe1990principal}
+Ian~T Jolliffe.
+\newblock Principal component analysis: a beginner's guide—i. introduction
+  and application.
+\newblock {\em Weather}, 45(10):375--382, 1990.
+
+\bibitem{koopmans1995spectral}
+Lambert~H Koopmans.
+\newblock {\em The spectral analysis of time series}.
+\newblock Elsevier, 1995.
+
+\bibitem{podobnik2008detrended}
+Boris Podobnik and H~Eugene Stanley.
+\newblock Detrended cross-correlation analysis: a new method for analyzing two
+  nonstationary time series.
+\newblock {\em Physical review letters}, 100(8):084102, 2008.
+
+\bibitem{torrence1998practical}
+Christopher Torrence and Gilbert~P Compo.
+\newblock A practical guide to wavelet analysis.
+\newblock {\em Bulletin of the American Meteorological society}, 79(1):61--78,
+  1998.
+
+\bibitem{vermunt2002latent}
+Jeroen~K Vermunt and Jay Magidson.
+\newblock Latent class cluster analysis.
+\newblock {\em Applied latent class analysis}, 11:89--106, 2002.
+
+\end{thebibliography}
