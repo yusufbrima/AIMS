@@ -9,6 +9,7 @@ cities <-  cities_dataset[,2:11]
 head(cities_dataset)
 
 
+boxplot(cities,col=1:10,main="Boxplot of PET",ylab="PET in mm")
 
 ####### performing the clustering############
 cities.august.scaled.clus=hclust(dist(t(scale(cities))),method='ward.D2')

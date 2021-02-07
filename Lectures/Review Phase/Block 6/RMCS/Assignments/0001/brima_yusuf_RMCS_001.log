@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.26)  31 JAN 2021 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.26)  6 FEB 2021 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,6 +23,11 @@ File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
@@ -33,7 +38,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks17
 \ex@=\dimen135
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -63,21 +68,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count182
 \dspbrk@lvl=\count183
-\tag@help=\toks16
+\tag@help=\toks18
 \row@=\count184
 \column@=\count185
 \maxfields@=\count186
-\andhelp@=\toks17
+\andhelp@=\toks19
 \eqnshift@=\dimen138
 \alignsep@=\dimen139
 \tagshift@=\dimen140
 \tagwidth@=\dimen141
 \totwidth@=\dimen142
 \lineht@=\dimen143
-\@envbody=\toks18
+\@envbody=\toks20
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
@@ -97,22 +102,22 @@ Package: placeins 2005/04/18  v 2.2
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks20
-\thm@bodyfont=\toks21
-\thm@headfont=\toks22
-\thm@notefont=\toks23
-\thm@headpunct=\toks24
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
 \thm@preskip=\skip52
 \thm@postskip=\skip53
 \thm@headsep=\skip54
-\dth@everypar=\toks25
+\dth@everypar=\toks27
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks26
+\KV@toks@=\toks28
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
@@ -148,14 +153,14 @@ Loading kernel: messages; fonts; allocations: state,
 \D@c=\dimen149
 \L@c=\dimen150
 \R@c=\dimen151
-\Edge@c=\toks27
+\Edge@c=\toks29
 \X@p=\dimen152
 \Y@p=\dimen153
 \U@p=\dimen154
 \D@p=\dimen155
 \L@p=\dimen156
 \R@p=\dimen157
-\Edge@p=\toks28
+\Edge@p=\toks30
 \X@origin=\dimen158
 \Y@origin=\dimen159
 \X@xbase=\dimen160
@@ -183,10 +188,10 @@ Loading kernel: messages; fonts; allocations: state,
 \quotPTK@=\dimen173
 
 utility macros; pictures: \xy, positions,
-\swaptoks@@=\toks29
+\swaptoks@@=\toks31
 \connectobjectbox@@=\box49
  objects,
-\styletoks@=\toks30
+\styletoks@=\toks32
  decorations;
 kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
@@ -203,7 +208,7 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
 (/usr/local/texlive/2020/texmf-dist/tex/generic/xypic/xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.12 curve,
 \crv@cnt@=\count191
-\crvpts@=\toks31
+\crvpts@=\toks33
 \splinebox@=\box50
 \splineval@=\dimen174
 \splinedepth@=\dimen175
@@ -230,8 +235,8 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
  Xy-pic option: Matrix feature v.3.14
 \Row=\count192
 \Col=\count193
-\queue@=\toks32
-\queue@@=\toks33
+\queue@=\toks34
+\queue@@=\toks35
 \qcount@=\count194
 \qcount@@=\count195
 \matrixsize@=\count196
@@ -251,13 +256,17 @@ Xy-pic pdf driver: `line' extension support
 (/usr/local/texlive/2020/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded)
 Xy-pic pdf driver: `rotate' extension support
 (/usr/local/texlive/2020/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded)
-loaded))
+loaded)) (/usr/local/texlive/2020/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks34
+\pgfutil@everybye=\toks36
 \pgfutil@tempdima=\dimen180
 \pgfutil@tempdimb=\dimen181
 
@@ -279,12 +288,12 @@ Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks35
-\pgfkeys@temptoks=\toks36
+\pgfkeys@pathtoks=\toks37
+\pgfkeys@temptoks=\toks38
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks37
+\pgfkeys@tmptoks=\toks39
 ))
 \pgf@x=\dimen182
 \pgf@y=\dimen183
@@ -302,9 +311,9 @@ ode.tex
 \c@pgf@countb=\count198
 \c@pgf@countc=\count199
 \c@pgf@countd=\count266
-\t@pgf@toka=\toks38
-\t@pgf@tokb=\toks39
-\t@pgf@tokc=\toks40
+\t@pgf@toka=\toks40
+\t@pgf@tokb=\toks41
+\t@pgf@tokc=\toks42
 \pgf@sys@id@count=\count267
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
@@ -355,9 +364,9 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 \pgfmath@dimen=\dimen192
 \pgfmath@count=\count270
 \pgfmath@box=\box52
-\pgfmath@toks=\toks41
-\pgfmath@stack@operand=\toks42
-\pgfmath@stack@operation=\toks43
+\pgfmath@toks=\toks43
+\pgfmath@stack@operand=\toks44
+\pgfmath@stack@operation=\toks45
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -509,8 +518,8 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen275
 \pgffor@skip=\dimen276
-\pgffor@stack=\toks44
-\pgffor@toks=\toks45
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -554,16 +563,16 @@ File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks46
-\verbatim@line=\toks47
+\every@verbatim=\toks48
+\verbatim@line=\toks49
 \verbatim@in@stream=\read4
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count284
-\float@exts=\toks48
+\float@exts=\toks50
 \float@box=\box62
-\@float@everytoks=\toks49
+\@float@everytoks=\toks51
 \@floatcapt=\box63
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/bbm-macros/bbm.sty
@@ -594,7 +603,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen291
 \Gm@layouthoffset=\dimen292
 \Gm@layoutvoffset=\dimen293
-\Gm@dimlist=\toks50
+\Gm@dimlist=\toks52
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
@@ -750,47 +759,44 @@ Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-\c@thm=\count304
-\c@quest=\count305
-
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count306
+\l__kernel_color_stack_int=\count304
 \l__pdf_internal_box=\box64
 )
 (./brima_yusuf_RMCS_001.aux)
 \openout1 = `brima_yusuf_RMCS_001.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count307
+\scratchcounter=\count305
 \scratchdimen=\dimen305
 \scratchbox=\box65
-\nofMPsegments=\count308
-\nofMParguments=\count309
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count310
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count308
 \MPscratchDim=\dimen306
-\MPnumerator=\count311
-\makeMPintoPDFobject=\count312
-\everyMPtoPDFconversion=\toks52
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks54
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -800,25 +806,25 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 63
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 24
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.47998pt on input line 63.
+Package xypdf Info: Line width: 0.47998pt on input line 24.
 
 ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
@@ -856,7 +862,7 @@ ABD: EveryShipout initializing macros
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring OFF on input line 63.
+Package hyperref Info: Link coloring OFF on input line 24.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -867,23 +873,18 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count313
+\c@section@level=\count311
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
  (./brima_yusuf_RMCS_001.out) (./brima_yusuf_RMCS_001.out)
 \@outlinefile=\write6
 \openout6 = `brima_yusuf_RMCS_001.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
-Overfull \hbox (2.61105pt too wide) in paragraph at lines 78--85
-[]  
- []
-
-[1
+ [1
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
@@ -893,128 +894,238 @@ Non-PDF special ignored!
 \openout7 = `brima_yusuf_RMCS_001.toc'.
 
  [2]
-<./gaphics/evapotranspiration.jpg, id=86, 1050.92625pt x 771.88374pt>
-File: ./gaphics/evapotranspiration.jpg Graphic file (type jpg)
-<use ./gaphics/evapotranspiration.jpg>
-Package pdftex.def Info: ./gaphics/evapotranspiration.jpg  used on input line 1
-09.
-(pdftex.def)             Requested size: 430.0006pt x 214.99529pt.
+
+LaTeX Warning: Citation `mitchell1989greenhouse' on page 1 undefined on input l
+ine 38.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Citation `wang2018effect' on page 1 undefined on input line 38.
+
+
+LaTeX Warning: Citation `katul2012evapotranspiration' on page 1 undefined on in
+put line 40.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.116 
-       [1] [2 <./gaphics/evapotranspiration.jpg>]
-<./gaphics/q001_a.png, id=95, 623.32875pt x 427.5975pt>
+l.51 \end{enumerate}
+                     [1]
+
+LaTeX Warning: Citation `van1966potential' on page 2 undefined on input line 54
+.
+
+<./gaphics/evapotranspiration.jpg, id=95, 1050.92625pt x 771.88374pt>
+File: ./gaphics/evapotranspiration.jpg Graphic file (type jpg)
+<use ./gaphics/evapotranspiration.jpg>
+Package pdftex.def Info: ./gaphics/evapotranspiration.jpg  used on input line 5
+7.
+(pdftex.def)             Requested size: 430.0006pt x 214.99529pt.
+<./gaphics/q001_box.png, id=96, 1445.4pt x 903.375pt>
+File: ./gaphics/q001_box.png Graphic file (type png)
+<use ./gaphics/q001_box.png>
+Package pdftex.def Info: ./gaphics/q001_box.png  used on input line 65.
+(pdftex.def)             Requested size: 370.01672pt x 231.26378pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `nielsen2016hierarchical' on page 2 undefined on input 
+line 72.
+
+[2 <./gaphics/evapotranspiration.jpg>] [3 <./gaphics/q001_box.png>]
+<./gaphics/q001_a.png, id=109, 843.15pt x 843.15pt>
 File: ./gaphics/q001_a.png Graphic file (type png)
 <use ./gaphics/q001_a.png>
-Package pdftex.def Info: ./gaphics/q001_a.png  used on input line 132.
-(pdftex.def)             Requested size: 189.62515pt x 130.08621pt.
-
-Overfull \hbox (44.51462pt too wide) in paragraph at lines 132--133
- [][] 
- []
-
-<./gaphics/q001_b.png, id=97, 625.33624pt x 481.8pt>
+Package pdftex.def Info: ./gaphics/q001_a.png  used on input line 85.
+(pdftex.def)             Requested size: 130.08221pt x 130.08621pt.
+<./gaphics/q001_b.png, id=110, 843.15pt x 843.15pt>
 File: ./gaphics/q001_b.png Graphic file (type png)
 <use ./gaphics/q001_b.png>
-Package pdftex.def Info: ./gaphics/q001_b.png  used on input line 138.
-(pdftex.def)             Requested size: 168.8335pt x 130.08621pt.
-
-Overfull \hbox (23.72296pt too wide) in paragraph at lines 138--139
- [][] 
- []
-
-<./gaphics/q001_c.png, id=98, 674.52pt x 468.75125pt>
+Package pdftex.def Info: ./gaphics/q001_b.png  used on input line 91.
+(pdftex.def)             Requested size: 130.08221pt x 130.08621pt.
+<./gaphics/q001_c.png, id=111, 843.15pt x 843.15pt>
 File: ./gaphics/q001_c.png Graphic file (type png)
 <use ./gaphics/q001_c.png>
-Package pdftex.def Info: ./gaphics/q001_c.png  used on input line 144.
-(pdftex.def)             Requested size: 187.18666pt x 130.08621pt.
-
-Overfull \hbox (42.07613pt too wide) in paragraph at lines 144--145
- [][] 
- []
-
-<./gaphics/cluster_map.png, id=99, 684.5575pt x 517.935pt>
+Package pdftex.def Info: ./gaphics/q001_c.png  used on input line 97.
+(pdftex.def)             Requested size: 130.08221pt x 130.08621pt.
+<./gaphics/cluster_map.png, id=112, 684.5575pt x 517.935pt>
 File: ./gaphics/cluster_map.png Graphic file (type png)
 <use ./gaphics/cluster_map.png>
-Package pdftex.def Info: ./gaphics/cluster_map.png  used on input line 153.
+Package pdftex.def Info: ./gaphics/cluster_map.png  used on input line 106.
 (pdftex.def)             Requested size: 229.24722pt x 173.44756pt.
-<./gaphics/q002_b.png, id=101, 463.7325pt x 417.56pt>
+
+
+LaTeX Warning: Citation `webb1960thermal' on page 4 undefined on input line 112
+.
+
+[4 <./gaphics/q001_a.png> <./gaphics/q001_b.png> <./gaphics/q001_c.png> <./gaph
+ics/cluster_map.png>]
+<./gaphics/q002_b.png, id=122, 843.15pt x 843.15pt>
 File: ./gaphics/q002_b.png Graphic file (type png)
 <use ./gaphics/q002_b.png>
-Package pdftex.def Info: ./gaphics/q002_b.png  used on input line 167.
-(pdftex.def)             Requested size: 152.49442pt x 137.31255pt.
-<./gaphics/q002_c.png, id=102, 463.7325pt x 417.56pt>
+Package pdftex.def Info: ./gaphics/q002_b.png  used on input line 122.
+(pdftex.def)             Requested size: 241.84409pt x 199.99289pt.
+<./gaphics/q002_c.png, id=123, 843.15pt x 843.15pt>
 File: ./gaphics/q002_c.png Graphic file (type png)
 <use ./gaphics/q002_c.png>
-Package pdftex.def Info: ./gaphics/q002_c.png  used on input line 173.
-(pdftex.def)             Requested size: 152.49442pt x 137.31255pt.
+Package pdftex.def Info: ./gaphics/q002_c.png  used on input line 128.
+(pdftex.def)             Requested size: 241.84409pt x 199.99289pt.
 
-Overfull \hbox (5.22217pt too wide) in paragraph at lines 165--176
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 120--131
  [][]  [] 
  []
 
-[3 <./gaphics/q001_a.png> <./gaphics/q001_b.png> <./gaphics/q001_c.png> <./gaph
-ics/cluster_map.png>] [4 <./gaphics/q002_b.png> <./gaphics/q002_c.png>]
-<./gaphics/q002_d.png, id=122, 628.3475pt x 433.62pt>
-File: ./gaphics/q002_d.png Graphic file (type png)
-<use ./gaphics/q002_d.png>
-Package pdftex.def Info: ./gaphics/q002_d.png  used on input line 224.
-(pdftex.def)             Requested size: 142.2077pt x 98.13593pt.
-<./gaphics/q002_e.png, id=123, 652.4375pt x 423.5825pt>
+[5 <./gaphics/q002_b.png> <./gaphics/q002_c.png>]
+<./gaphics/q002_e.png, id=131, 843.15pt x 843.15pt>
 File: ./gaphics/q002_e.png Graphic file (type png)
 <use ./gaphics/q002_e.png>
-Package pdftex.def Info: ./gaphics/q002_e.png  used on input line 230.
-(pdftex.def)             Requested size: 142.93396pt x 92.79417pt.
-<./gaphics/q002_f.png, id=124, 653.44125pt x 476.78125pt>
+Package pdftex.def Info: ./gaphics/q002_e.png  used on input line 184.
+(pdftex.def)             Requested size: 241.84409pt x 169.99074pt.
+<./gaphics/q002_e2.png, id=132, 843.15pt x 843.15pt>
+File: ./gaphics/q002_e2.png Graphic file (type png)
+<use ./gaphics/q002_e2.png>
+Package pdftex.def Info: ./gaphics/q002_e2.png  used on input line 190.
+(pdftex.def)             Requested size: 241.84409pt x 169.99074pt.
+
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 182--193
+ [][]  [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6]
+
+LaTeX Warning: Citation `wei2006time' on page 7 undefined on input line 203.
+
+<./gaphics/q002_d.png, id=140, 989.6975pt x 401.5pt>
+File: ./gaphics/q002_d.png Graphic file (type png)
+<use ./gaphics/q002_d.png>
+Package pdftex.def Info: ./gaphics/q002_d.png  used on input line 208.
+(pdftex.def)             Requested size: 241.8362pt x 170.00114pt.
+<./gaphics/q002_f.png, id=141, 989.6975pt x 401.5pt>
 File: ./gaphics/q002_f.png Graphic file (type png)
 <use ./gaphics/q002_f.png>
-Package pdftex.def Info: ./gaphics/q002_f.png  used on input line 236.
-(pdftex.def)             Requested size: 142.2077pt x 103.75728pt.
-<./gaphics/q002_g.png, id=125, 657.45625pt x 469.755pt>
+Package pdftex.def Info: ./gaphics/q002_f.png  used on input line 214.
+(pdftex.def)             Requested size: 241.8362pt x 170.00114pt.
+
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 206--217
+ [][]  [] 
+ []
+
+[7 <./gaphics/q002_e.png> <./gaphics/q002_e2.png> <./gaphics/q002_d.png> <./gap
+hics/q002_f.png>]
+<./gaphics/q002_g.png, id=151, 843.15pt x 843.15pt>
 File: ./gaphics/q002_g.png Graphic file (type png)
 <use ./gaphics/q002_g.png>
-Package pdftex.def Info: ./gaphics/q002_g.png  used on input line 245.
-(pdftex.def)             Requested size: 142.93396pt x 102.12071pt.
-<./gaphics/q002_h.png, id=126, 659.46375pt x 484.81125pt>
+Package pdftex.def Info: ./gaphics/q002_g.png  used on input line 228.
+(pdftex.def)             Requested size: 241.84409pt x 169.99074pt.
+<./gaphics/q002_h.png, id=152, 843.15pt x 843.15pt>
 File: ./gaphics/q002_h.png Graphic file (type png)
 <use ./gaphics/q002_h.png>
-Package pdftex.def Info: ./gaphics/q002_h.png  used on input line 251.
-(pdftex.def)             Requested size: 145.11053pt x 106.6736pt.
+Package pdftex.def Info: ./gaphics/q002_h.png  used on input line 234.
+(pdftex.def)             Requested size: 241.84409pt x 169.99074pt.
 
-[5 <./gaphics/q002_d.png> <./gaphics/q002_e.png> <./gaphics/q002_f.png> <./gaph
-ics/q002_g.png> <./gaphics/q002_h.png>] [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
- (./brima_yusuf_RMCS_001.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 264.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 226--237
+ [][]  [] 
+ []
+
+<./gaphics/q003_a.png, id=155, 843.15pt x 843.15pt>
+File: ./gaphics/q003_a.png Graphic file (type png)
+<use ./gaphics/q003_a.png>
+Package pdftex.def Info: ./gaphics/q003_a.png  used on input line 246.
+(pdftex.def)             Requested size: 137.31258pt x 137.31255pt.
+<./gaphics/q003_b.png, id=156, 843.15pt x 843.15pt>
+File: ./gaphics/q003_b.png Graphic file (type png)
+<use ./gaphics/q003_b.png>
+Package pdftex.def Info: ./gaphics/q003_b.png  used on input line 252.
+(pdftex.def)             Requested size: 137.31258pt x 137.31255pt.
+
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 244--255
+ [][]  [] 
+ []
+
+<./gaphics/q003_d.png, id=158, 843.15pt x 843.15pt>
+File: ./gaphics/q003_d.png Graphic file (type png)
+<use ./gaphics/q003_d.png>
+Package pdftex.def Info: ./gaphics/q003_d.png  used on input line 264.
+(pdftex.def)             Requested size: 241.84409pt x 169.99074pt.
+<./gaphics/q003_e.png, id=159, 843.15pt x 843.15pt>
+File: ./gaphics/q003_e.png Graphic file (type png)
+<use ./gaphics/q003_e.png>
+Package pdftex.def Info: ./gaphics/q003_e.png  used on input line 270.
+(pdftex.def)             Requested size: 241.84409pt x 169.99074pt.
+
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 262--273
+ [][]  [] 
+ []
+
+[8 <./gaphics/q002_g.png> <./gaphics/q002_h.png> <./gaphics/q003_a.png> <./gaph
+ics/q003_b.png>]
+<./gaphics/q003_h.png, id=168, 843.15pt x 843.15pt>
+File: ./gaphics/q003_h.png Graphic file (type png)
+<use ./gaphics/q003_h.png>
+Package pdftex.def Info: ./gaphics/q003_h.png  used on input line 298.
+(pdftex.def)             Requested size: 241.84409pt x 169.99074pt.
+<./gaphics/q003_i.png, id=169, 843.15pt x 843.15pt>
+File: ./gaphics/q003_i.png Graphic file (type png)
+<use ./gaphics/q003_i.png>
+Package pdftex.def Info: ./gaphics/q003_i.png  used on input line 304.
+(pdftex.def)             Requested size: 241.84409pt x 169.99074pt.
+
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 296--307
+ [][]  [] 
+ []
+
+<./gaphics/q003_c.png, id=171, 843.15pt x 843.15pt>
+File: ./gaphics/q003_c.png Graphic file (type png)
+<use ./gaphics/q003_c.png>
+Package pdftex.def Info: ./gaphics/q003_c.png  used on input line 313.
+(pdftex.def)             Requested size: 474.02626pt x 180.00003pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 <./gaphics/q003_d.png> <./gaphics/q003_e.png> <./gaphics/q003_h.png> <./gaph
+ics/q003_i.png>]
+
+LaTeX Warning: Citation `wold1987principal' on page 10 undefined on input line 
+322.
+
+[10 <./gaphics/q003_c.png>]
+No file brima_yusuf_RMCS_001.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
+(./brima_yusuf_RMCS_001.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
 Package rerunfilecheck Info: File `brima_yusuf_RMCS_001.out' has not changed.
-(rerunfilecheck)             Checksum: 82930D5435C340A548474EC229FD0848;723.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
+(rerunfilecheck)             Checksum: 937AE0607F83E3E4B186B5D89A6D5432;803.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 329.
  ) 
 Here is how much of TeX's memory you used:
- 21169 strings out of 480608
- 378862 string characters out of 5903630
- 672303 words of memory out of 5000000
- 36573 multiletter control sequences out of 15000+600000
- 541221 words of font info for 62 fonts, out of 8000000 for 9000
+ 21329 strings out of 480608
+ 381827 string characters out of 5903630
+ 675527 words of memory out of 5000000
+ 36704 multiletter control sequences out of 15000+600000
+ 544317 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,9n,60p,3248b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on brima_yusuf_RMCS_001.pdf (9 pages, 777233 bytes).
+r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/lo
+cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on brima_yusuf_RMCS_001.pdf (13 pages, 1775092 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
