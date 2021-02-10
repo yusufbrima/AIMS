@@ -1,0 +1,176 @@
+setwd("/home/gladys/AIMS_19_20/Review Phase/R.Mthds Clmt.Sci By Babatunde/PCA")
+DD=read.table('Droughts.txt',header=T,skip=22,sep = "\t")
+DD=read.table('Droughts.xlxs',header=T,skip=22,sep = "\t")
+DD=read.table('Droughts.xlsx',header=T,skip=22,sep = "\t")
+DD
+setwd("/home/gladys/AIMS_19_20/Review Phase/R.Mthds Clmt.Sci By Babatunde/PCA")
+DD=read.table('Droughts.xlsx',header=T,skip=22,sep = "\t")
+setwd("/home/gladys/AIMS_19_20/Review Phase/R.Mthds Clmt.Sci By Babatunde/PCA")
+DD=read.table('TurkanaCC.csv',header=T,skip=22,sep = "\t")
+setwd("/home/gladys/AIMS_19_20/Review Phase/R.Mthds Clmt.Sci By Babatunde/PCA")
+DD=read.table('TurkanaCC.csv',header=T,skip=22,sep = "\t")
+## Checking missing values in the dataset
+which(is.na(DD))
+#Removing varaibles year and month
+datanew=DD[,-c(1,2)]
+#calculating the PCA
+pca=prcomp(datanew,center = T,scale. = T,retx = T)
+summary(pca)
+##identification of the scores
+scores <- pca$x
+#Removing varaibles year and month
+datanew=DD[,-c(1,2)]
+#calculating the PCA
+pca=prcomp(datanew,center = T,scale. = T,retx = T)
+#calculating the PCA
+pca=prcomp(datanew,center = T,scale. = T,retx = T)
+View(data)
+## Reading the data
+data=my_data <- read.csv("TurkanaCC.csv")
+data
+View(data)
+setwd("/home/gladys/AIMS_19_20/Review Phase/R.Mthds Clmt.Sci By Babatunde/PCA")
+DD=read.table('TurkanaCC.csv',header=T,skip=22,sep = "\t")
+## Checking missing values in the dataset
+which(is.na(DD))
+#Removing varaibles year and month
+datanew=DD[,-c(1,2)]
+#calculating the PCA
+pca=prcomp(datanew,center = T,scale. = T,retx = T)
+setwd("/home/gladys/AIMS_19_20/Review Phase/R.Mthds Clmt.Sci By Babatunde/PCA")
+DD=read.table('TurkanaCC.csv')
+## Checking missing values in the dataset
+which(is.na(DD))
+#Removing varaibles year and month
+datanew=DD[,-c(1,2)]
+#calculating the PCA
+pca=prcomp(datanew,center = T,scale. = T,retx = T)
+DD=read.csv('TurkanaCC.csv')
+## Checking missing values in the dataset
+which(is.na(DD))
+#Removing varaibles year and month
+datanew=DD[,-c(1,2)]
+#calculating the PCA
+pca=prcomp(datanew,center = T,scale. = T,retx = T)
+summary(pca)
+##identification of the scores
+scores <- pca$x
+# identification of the loadings
+loadings=pca$rotation
+#plotting the scree plot
+screeplot(pca,type = "l",lwd=2,main = "Scree plot") ##COMMENT THIS PLOT
+mm=array(NA,c(16,16))
+for (i in 1:16){
+mm[,i]=pca$rotation[,i]*pca$sdev[i]
+}
+for (i in 1:10){
+mm[,i]=pca$rotation[,i]*pca$sdev[i]
+}
+rownames(mm)=names(datanew)
+#plotting the scree plot
+screeplot(pca,type = "l",lwd=2,main = "Scree plot") ##COMMENT THIS PLOT
+mm=array(NA,c(16,16))
+for (i in 1:10){
+mm[,i]=pca$rotation[,i]*pca$sdev[i]
+}
+mm=array(NA,c(16,16))
+for (i in 1:10){
+mm[,i]=pca$rotation[,i]*pca$sdev[i]
+}
+mm=array(NA,c(10,10))
+for (i in 1:10){
+mm[,i]=pca$rotation[,i]*pca$sdev[i]
+}
+scores
+## Checking missing values in the dataset
+which(is.na(DD))
+View(DD)
+#Removing varaibles year and month
+datanew=DD[,-c(1,2)]
+datanew
+#Removing varaibles year and month
+datanew=DD[,-c(1,)]
+#Removing varaibles year and month
+datanew=DD[,-c(1)]
+datanew
+pca
+summary(pca)
+##identification of the scores
+scores <- pca$x
+scores
+# identification of the loadings
+loadings=pca$rotation
+loadings
+#plotting the scree plot
+screeplot(pca,type = "l",lwd=2,main = "Scree plot") ##COMMENT THIS PLOT
+mm=array(NA,c(16,16))
+for (i in 1:16){
+mm[,i]=pca$rotation[,i]*pca$sdev[i]
+}
+mm=array(NA,c(9,9))
+for (i in 1:9){
+mm[,i]=pca$rotation[,i]*pca$sdev[i]
+}
+mm=array(NA,c(16,16))
+for (i in 1:9){
+mm[,i]=pca$rotation[,i]*pca$sdev[i]
+}
+for (i in 1:16){
+mm[,i]=pca$rotation[,i]*pca$sdev[i]
+}
+rownames(mm)=names(datanew)
+colnames(mm)=colnames(pca$rotation)
+ev=round(pca$sdev^2/sum(pca$sdev^2)*100,2)
+print(ev)
+mm=array(NA,c(9,9))
+mm
+mm=array(c(9,9))
+mm
+mm=array(NA,c(9,9))
+mm
+DD=read.csv('TurkanaCC.csv')
+## Checking missing values in the dataset
+which(is.na(DD))
+#Removing varaible year
+datanew=DD[,-c(1)]
+#calculating the PCA
+pca=prcomp(datanew,center = T,scale. = T,retx = T)
+summary(pca)
+##identification of the scores
+scores <- pca$x
+scores
+# identification of the loadings
+loadings=pca$rotation
+loadings
+#plotting the scree plot
+screeplot(pca,type = "l",lwd=2,main = "Scree plot") ##COMMENT THIS PLOT
+mm=array(NA,c(9,9))
+for (i in 1:9){
+mm[,i]=pca$rotation[,i]*pca$sdev[i]
+}
+rownames(mm)=names(datanew)
+colnames(mm)=colnames(pca$rotation)
+ev=round(pca$sdev^2/sum(pca$sdev^2)*100,2)
+print(ev)
+mm
+#calculating the PCA
+pca=prcomp(datanew,center = T,scale. = T,retx = T)
+summary(pca)
+ev=round(pca$sdev^2/sum(pca$sdev^2)*100,2)
+print(ev)
+rm(list=ls())
+setwd("/home/gladys/AIMS_19_20/Review Phase/R.Mthds Clmt.Sci By Babatunde/Assignment 1")
+## Reading the data
+data=my_data <- read.csv("TurkanaCC.csv")
+data
+View(data)
+# scaling the array
+data1=data[,-1]
+yy.scaled=scale(data1)
+####### performing the clustering############
+yy.clus=hclust(dist(t(yy.scaled)),method='ward')
+####### performing the clustering############
+yy.clus=hclust(dist(t(yy.scaled)),method='ward.D2')
+yy.clus2=hclust(dist(t(yy.scaled)),method='single')
+yy.clus3=hclust(dist(t(yy.scaled)),method='average')
+plot(yy.clus,hang=-2)
