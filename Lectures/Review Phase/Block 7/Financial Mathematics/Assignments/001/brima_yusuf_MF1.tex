@@ -1,0 +1,329 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Template for AIMS Rwanda Assignments         %%%              %%%
+%%% Author:   AIMS Rwanda tutors                             %%%   ###        %%%
+%%% Email: tutors2017-18@aims.ac.rw                               %%%   ###        %%%
+%%% Copyright: This template was designed to be used for    %%% #######      %%%
+%%% the assignments at AIMS Rwanda during the academic year %%%   ###        %%%
+%%% 2017-2018.                                              %%%   #########  %%%
+%%% You are free to alter any part of this document for     %%%   ###   ###  %%%
+%%% yourself and for distribution.                          %%%   ###   ###  %%%
+%%%                                                         %%%              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%% Ensure that you do not write the questions before each of the solutions because it is not necessary. %%%%%% 
+
+\documentclass[12pt,a4paper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% packages %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[all]{xy}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{psfrag}
+\usepackage{mathrsfs}
+\usepackage{actuarialangle}
+\usepackage[T1]{fontenc}
+%%%%%%%%%%%%%%%%%%%%% students data %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\student}{Yusuf Brima}
+\newcommand{\course}{Mathematical Finance}
+\newcommand{\assignment}{1}
+
+%%%%%%%%%%%%%%%%%%% using theorem style %%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{exa}[thm]{Example}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{coro}[thm]{Corollary}
+\newtheorem{quest}{Question}[section]
+
+%%%%%%%%%%%%%%  Shortcut for usual set of numbers  %%%%%%%%%%%
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%% title page %%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=\textwidth]{aims_rwanda.jpg}
+%\end{figure}
+\begin{center}
+\textbf{AFRICAN INSTITUTE FOR MATHEMATICAL SCIENCES \\[0.5cm]
+(AIMS RWANDA, KIGALI)}
+\vspace{1.0cm}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%% assignment information %%%%%%%%%%%%%%%%
+\noindent
+\rule{17cm}{0.2cm}\\[0.3cm]
+Name: \student \hfill Assignment Number: \assignment\\[0.1cm]
+Course: \course \hfill Date: \today\\
+\rule{17cm}{0.05cm}
+\vspace{1.0cm}
+\section*{Exercise 1}
+\begin{enumerate}
+\item[(a)]
+	$
+\delta(t)  = 0.05 + 0.04t, \qquad 0 \leq t \leq \frac{1}{2}
+$\\
+$ \delta(t)  =  0.07 -  0.04 \left( t  - \frac{1}{2}   \right)^2, \qquad \frac{1}{2} \leq t \leq 1  $\\
+$   C =  \pounds 10,000 $\\
+$ \text{Withdraw } =  \pounds 10,000 $
+\begin{align*}
+u \left( 0,  \frac{1}{4}   \right)   &=  e^{\int_0^{ \frac{1}{4} }  ( 0.05 + 0.04t )dt } \quad =  1.0138\\
+u \left( \frac{1}{4} , \frac{1}{2}   \right)   &=  e^{\int_{\frac{1}{4}}^{ \frac{1}{2} }  ( 0.05 + 0.04t )dt } \quad =  1.01638\\
+u \left( \frac{1}{2}  ,\frac{3}{4}   \right)   &=  e^{\int_{\frac{1}{2}}^{ \frac{3}{4} }  \left( 0.07 -  0.04 \left( t  - \frac{1}{2}   \right)62  \right)dt } \quad =  1.0174\\
+u \left( \frac{3}{4}, 1  \right)   &=  e^{\int_{\frac{3}{4}}^1 \left( 0.07 -  0.04 \left( t  - \frac{1}{2}   \right)62  \right)dt } \quad =  1.01617
+\end{align*}
+The about she earned at the first 3 months is:\\
+\begin{align*}
+&=  \pounds  10,000 u \left(  0, \frac{1}{4}   \right) - 1000\\
+&=  \pounds  10,000  \time  1.0138 -  \pounds  1000\\
+&=  \pounds   9138 \times 1.01638 -  \pounds  1000 \\
+&=  \pounds   8287.6804
+\end{align*}
+The about she earned at the first 9 months is:\\
+\begin{align*}
+&= 8287.6804 u \left( \frac{1}{2} , \frac{3}{4}   \right)  - \pounds  1000\\
+&=  8287.6804 \time  1.0138 - \pounds  1000\\
+&=  9138 \times 1.0174 -  \pounds  1000 \\
+&= \pounds   7431.88608
+\end{align*}
+
+The about she earned over the whole year is:\\
+\begin{align*}
+&= 7431.88608 u \left( \frac{3}{4} , 1   \right)\\
+&=   \pounds  7431.88608 \time  1.01617 \\
+&=  \pounds 7552.059678
+\end{align*}
+\item[(b)] Nominal Interest Rate\\
+$u \left( t, t+h  \right) =  1 + h i_h(t) , \quad \text{where} i_h(t) =  \frac{ v\left( t, t+h  \right)  -1  }{ h}$\\
+$h  =  \frac{1}{2},  \quad  t =  \frac{1}{2}$\\
+\begin{align*}
+i_{\frac{1}{2}}(\frac{1}{2}) &=  \frac{    u \left( \frac{3}{4}, 1  \right)  -1} {  \frac{1}{2}}\\
+&=  \frac{  e^{ \int_{\frac{1}{2}}^1    \left(  0.07 -  0.04   \left(  t  -  \frac{ 1}{2} \right)^2   \right)  } dt   }{   \frac{1}{2} }\\
+&=  \frac{ e^{  \left[   0.08 -  \frac{0.04t^3}{3}  -  0.02t^2  \right]^1_{\frac{1}{2}}   -1 }    }{   \frac{1}{2}}\\
+&=  \frac{  e^{\frac{1}{75}} -1 }{   \frac{1}{2}}\\
+&=  \frac{   1.0134  -1}{\frac{1}{2}}\\
+&=  0.069779
+\end{align*}
+\end{enumerate}
+
+\section*{Exercise 2}
+\begin{enumerate}
+		\item[(a)]
+				\begin{equation}
+						u  =  1 + i
+						\label{eq:accu}
+				\end{equation}
+				\begin{equation}
+						v  =  \frac{1}{u},
+						\label{eq:discount}
+				\end{equation}
+				\begin{equation}
+						uv = 1
+						\label{eq:acc_dis}
+				\end{equation}
+				\begin{enumerate}
+						\item[(i)]  
+							\begin{align*}
+									a_{\angl{n}} &=  \frac{1}{1 + i}  \left(   \frac{ 1-v^n  } {  1 -   \frac{  1}{1+i}}    \right)\\
+									       &=  \frac{1}{1 + i}   \left(   \frac{ 1-v^n  } {  \frac{ 1 + i -1 }{1+i}  }    \right)\\
+									       &=  \frac{1}{1 + i}  \left(   (1 -  v^n)  \frac{ 1+i}{i}    \right)\\
+									       &=  \frac{1+v^n}{i}
+							\end{align*}
+						\item[(ii)]  
+						      \begin{align*}
+						      			s_{\angl{n}}  &=  (1+i)^n a_n\\
+						      			       &=  \frac{v^n  -1}{i}
+						      \end{align*}
+						      From \eqref{eq:accu} $ \implies  i  =  u -1$  \\
+						      $\therefore$
+						      \begin{align*}
+						      			a_{\angl{n}}  &=  \left(   \frac{  \frac{1}{v^n}  -1 }{ u -1}  \right)\\
+						      			      &=  \left(   \frac{  \frac{ 1-v^n }{v^n}  }{ u -1}  \right)\\
+						      			      &=  \left(  \frac{ 1-v^n }{v^n}   \frac{ 1}{u-1}  \right)\\
+						      			      &= \left(  \frac{ 1-v^n}{i}   \frac{i}{v^n}  \right) \\
+						      			      &=   \left(  \frac{ 1-v^n}{i}   u^n  \right) \\
+						      			      &= \left(  1= i \right) ^n a_{\angl{n}} 
+						      \end{align*}
+						      
+						    \item[(iii)]
+						    \begin{align*}
+						        		\frac{1}{a_{\angl{n}} }  -  \frac{1}{s_{\angl{n}} }  &=  \frac{i}{ 1 - v^n} -  \frac{1}{(1 +i)^n} \frac{i}{1 - v^n}\\
+						        		      &= \frac{i}{1 - v^n}  -  \frac{  i}{   u^n (1-v^n) }\\
+						        		      &=   \frac{  iu^n  - i}{  (1-v^n)u^n}\\
+						        		      &=  \frac{i(u^n -1) }{  u^n -  (uv)^n } \quad \text{from equation \eqref{eq:discount} } uv=1\\
+						        		      &=  \frac{  i(u^n -1) }{ (u^n -1)}\\
+						        		      &=  i  
+ 						    \end{align*}
+				\end{enumerate}
+			\item[(b)] If $a_n  =  8.3064 $ and $ s_n =  14.2068$\\
+					\begin{align*}
+								i  &=  \frac{1}{a_n} -  \frac{1}{s_n}	\\
+								  &=  \frac{1}{8.3064} - \frac{1}{14.2068} \\
+								  &=  0.05\\
+								  &= 5\text{\%}
+					\end{align*}	
+			For $n$,  we solve as follows:\\
+			\begin{align*}
+						s_n  &=  \left(  1 + i \right)^n a_n\\
+						 \left(  1 + i \right)^n &=  \frac{s_n}{a_b} \implies  n \ln(1+i)\\
+						 n &=  \frac{  \ln(s_n) }{  \ln(1+i)  } =  11
+			\end{align*}							 
+\end{enumerate}
+\section*{Exercise 3}
+\begin{enumerate}
+		\item[(a)] Hint
+		
+				   $v^{m+1}  + v^{m+2} + v^{m+3} + \dots  + v^{m+n}   = a_{\angl{m+n}}  - a_{\angl{n}}$
+				   
+$\pounds 15,00 \implies 15 \text{ years}  + \pounds 100 \text{ and } \pounds 200 $
+
+At interest rate $ i = 4\% \text{ per annum }  =  0.04 $
+
+The expression for the Present Value $PV$ (initial amount of annual payment) is thus:
+
+\begin{align*}
+PV =  5,000  -  Xa_{ \angl{15} } - (100 (a_{ \angl{15} }  - a_{ \angl{5} } )) -  (200( a_{ \angl{15} }  - a_{ \angl{10} })) 
+\end{align*}
+
+And to solve for the the initial amount of the annual payment, we proceed as follows:
+
+\begin{align*}
+ 0 =  5,000  -  Xa_{ \angl{15} } - (100 (a_{ \angl{15} }  - a_{ \angl{5} } )) -  (200( a_{ \angl{15} }  - a_{ \angl{10} })) 
+\end{align*}
+But from equation \eqref{eq:accu}, \\
+$u  =  1.04$\\
+ $\text{ it follows that }  v  = \frac{1}{u} \text{ from equation }  \eqref{eq:acc_dis}$\\
+\begin{align*}
+		\implies   a_{\angl{n}}  &=  \frac{1-v^n}{i} \\
+		                     &= \frac{1  -  (1.04)^{-n }}{0.04}
+\end{align*}
+\begin{align*}
+		\ a_{\angl{15}}  &=  \frac{1-v^{15}}{i}  \\
+		                     &= \frac{1  -  (1.04)^{-15 }}{0.04}\\
+		                     &=  11.12
+\end{align*}
+\begin{align*}
+		 a_{\angl{5}}  &=  \frac{1-v^{5}}{i}  \\
+		                     &= \frac{1  -  (1.04)^{-5 }}{0.04}\\
+		                     &=  4.45
+\end{align*}
+\begin{align*}
+		a_{\angl{10}}  &=  \frac{1-v^{10}}{i}  \\
+		                     &= \frac{1  -  (1.04)^{-10 }}{0.04}\\
+		                     &=  8.11
+\end{align*}
+\begin{align*}
+		0  &=  5,000 -  11.12x -  (100(11.12 - 4.45)) -  200(11.12 - 8.11))\\
+		x  &=  \pounds 335.52
+\end{align*}
+\item[(b)] To calculate the loan outstanding at the end of the $3^{\text{rd}}$ year and hence calculate the interest paid in
+the $4^{\text{th}}$ year, we proceed as follows:\\
+We let Outstanding Loan be the variable $OA$,  therefore,  the Outstanding Loan for the $3^{\text{rd}}$ year is:\\
+\begin{align*}
+	 OA_{3} &=  C(i+1)^n -  (x(i+1)^{n-1} + x(i+1)^{n-2} + x) \quad \text{ where x is  the initial annual payment}\\
+	&= 5,000 u^3 - (xu^2 + xu + x)\\
+	&=  5,000((1.04)^3  -  335.52((1.04)^2  +  1.04 +1)\\
+	&=  \pounds 4576.96
+\end{align*}
+The interest paid in the $4^{\text{th}}$ year is:
+\begin{align*}
+	I &=  OA \times i\\
+	                   &= 4576.96 \times 0.04\\
+	                   &= \pounds 183.0784
+\end{align*}
+\item[(c)] If at the end of the 7th year the investor requests that the loan be recalculated with level payments. the new amount of loan is thus:\\
+First, we calculate the loan at the 7th year as stated below, where $OL_7$ stands for loan at the 7th year.
+\begin{align*}
+  OL_7  &= 5,000u^7  - (xu^6 + xu^5 + xu^4 + xu^3 + xu^2 + (x +100)u + (x+100))\\
+             &= \pounds  3725.6231
+\end{align*}
+\begin{align*}
+   z  &=  y a_{\angl{8}}\\
+       &= y \frac{1-v^n}{ i} \\
+       &=  \frac{1 - (1+i )^{-n}}{i}\\
+  \therefore y  &= \frac{zi}{ 1 - (1 +i)^{-n}  }\\
+  					&= \frac{3725.6231 \times 0.04   }{  1 - (1.04)^{-8}  }\\
+  				y 	& =  \pounds 553.34 \quad \text{payable equally for the remaining 8 years}
+\end{align*}
+\end{enumerate}
+\section*{Exercise 4}
+\begin{enumerate}
+		\item[(a)] 
+		Given
+		\begin{align*}
+				150,000 \bar{S_{\angl{2}}}  + 50,000  \bar{S_{\angl{1}}} &= 25,000 \int_0^{T-2}  e^{-\delta t} dt\\
+		\end{align*}
+Proof
+\begin{align*}
+		T  &= 2 - \frac{ \ln[ 1 -  2\delta (1+i)  (4 -  3i)  ]   }{  \delta }
+\end{align*}
+It follows that
+\begin{equation}
+	150,000u^2 + 50,000u  =  25,000 \int_0^{T-2}  e^{-\delta t} dt 
+	\label{eq:proof}
+\end{equation}
+\begin{align*}
+   	150,000u^2 + 50,000u  &  25,000 \int_0^{T-2}  e^{-\delta t} dt  \quad \text{ dividing both sides by 25,000 we get}\\
+   	6u^2 + 2u &=  \int_0^{T-2}  e^{-\delta t} dt 
+\end{align*}
+We solve for 
+\begin{align*}
+		 &= 6u^2 + 2u \quad \text{from equation \eqref{eq:accu},  where } u =  1 + i\\
+		 &= 6(1 +i)^2  + 2(1+1)\\
+		 &= 2(1+i)(3(1+i)+1)\\
+		 &= 2(1+i_(4+3i)
+\end{align*}
+\begin{equation}
+		6u^2 + 2u = 2(1+i_(4+3i)
+		\label{eq:lhs}
+\end{equation}
+Also for $\int_0^{T-2}  e^{-\delta t} dt $\\
+\begin{align*}
+    \int_0^{T-2}  e^{-\delta t} dt  &=   \left[   \frac{-e^{-\delta t} }{\delta} \right]_0^{T-2}\\
+    				&=  \frac{  -e^{ -\delta(T-2) }  }{ \delta }  + \frac{1}{ \delta}\\
+    				&=  \frac{  1- e^{-\delta(T-2) }   }{ \delta}
+\end{align*}
+\begin{equation}
+		\int_0^{T-2}  e^{-\delta t} dt =  \frac{  1- e^{-\delta(T-2) }   }{ \delta}
+		\label{eq:rhs}
+\end{equation}
+So we equate \eqref{eq:lhs}  and \eqref{eq:rhs} as follows:\\
+\begin{align*}
+			2(1+i_(4+3i) &=  \frac{  1- e^{-\delta(T-2) }   }{ \delta}\\
+			1 -  e^{-\delta(T-2) }  &=  2\delta (1 + i)(4 + 3i)\\
+			e^{-\delta(T-2) }  &=  1 -  2\delta (1 + i) (4 +3i)\\ 
+			\text{We apply natural log (ln) to both sides}\\
+			-\delta(T-2) &=  \ln(1 - 2\delta(1 +i) (4 +3i))\\
+			T-2 &= \frac{ -\ln \left(  1 -2 \delta(1+i)  (1 + i)  \right)   }{ \delta }\\
+			T &= 2 -   \frac{ \ln \left(  1 -2 \delta(1+i)  (1 + i)  \right)   }{ \delta }
+\end{align*}
+Given $\delta = \ln(1 + i)  =  \ln(1.075)$\\
+\begin{align*}
+		T  &=  2 -  \frac{ \left(  1 -2 \ln(1.075) (1.075) (4 + 3(0.075))    \right)  }{ \ln(1.075) }\\
+		&= 44.44787 \text{ years}\\
+		&= 44.448 \text{ years}
+\end{align*}
+\end{enumerate}
+\end{document}
