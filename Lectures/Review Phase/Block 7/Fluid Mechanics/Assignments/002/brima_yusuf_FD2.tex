@@ -92,7 +92,7 @@ Course: \course \hfill Date: \today\\
 						\label{eq:1}
 			  \end{equation}
 					\begin{figure}[!h]
-									\includegraphics[width=430pt,  height=230pt]{./graphics/q001_a.png}
+									\includegraphics[width=480pt,  height=260pt]{./graphics/q001_a.png}
 										\caption{A plot of the dynamical system of ODEs using RK4 method}
 										\label{fig:q1}
 								\end{figure}
@@ -105,7 +105,7 @@ Course: \course \hfill Date: \today\\
 						\label{eq:2}
 			  \end{equation}
 					\begin{figure}[!h]
-									\includegraphics[width=430pt,  height=200pt]{./graphics/q001_b.png}
+									\includegraphics[width=480pt,  height=240pt]{./graphics/q001_b.png}
 										\caption{A plot of the dynamical system of ODEs using RK4 method}
 										\label{fig:q2}
 								\end{figure}
@@ -118,7 +118,7 @@ Course: \course \hfill Date: \today\\
 						\label{eq:3}
 			  \end{equation}
 					\begin{figure}[!h]
-									\includegraphics[width=430pt,  height=200pt]{./graphics/q001_c.png}
+									\includegraphics[width=480pt,  height=240pt]{./graphics/q001_c.png}
 										\caption{A plot of the dynamical system of ODEs using RK4 method}
 										\label{fig:q3}
 								\end{figure}
@@ -131,7 +131,7 @@ Course: \course \hfill Date: \today\\
 						\label{eq:4}
 			  \end{equation}
 					\begin{figure}[!h]
-									\includegraphics[width=430pt,  height=200pt]{./graphics/q001_d.png}
+									\includegraphics[width=500pt,  height=290pt]{./graphics/q001_d.png}
 										\caption{A plot of the dynamical system of ODEs using RK4 method}
 										\label{fig:q4}
 								\end{figure}
@@ -145,8 +145,189 @@ Given
 \end{equation}
 \begin{enumerate}
 							\item[(i)]   We calculate the equilibrium point as thus:
+								\begin{eqnarray}
+										\label{eq:6}
+										\frac{dx}{dt}  &=  y - x^2 \\
+										\label{eq:7}
+										\frac{dy}{dt}  &= x -2
+								\end{eqnarray}
+								To derive the equilibrium point of the above system,  we set it equal to 0 as indicated below.
+							\begin{align*}
+										\frac{dx}{dt}  &=  y - x^2 = 0 \\
+									   \frac{dy}{dt}  &= x -2  = 0
+								\end{align*}
+								\begin{align*}
+								       y - x^2 &= 0 \quad \implies x  = 2 \\
+									   x -2  &= 0 \quad y = 4
+								\end{align*}
+								Thus the equilibrium points of the system is:
+								\begin{align*}
+										\begin{pmatrix}
+												x_0 \\
+												y_0
+										\end{pmatrix}  &= \begin{pmatrix}
+												2\\
+												4
+										\end{pmatrix}
+								\end{align*}
 							\item[(ii)]We proceed as follows to linearize the dynamical system around the equilibrium in \eqref{eq:5}.
+							\begin{align*}
+									-cy + dxy  &= 0\\
+									y(-c + dx) &=  0 \quad \text{we divied through by }  y\\ 
+									-c + + dx  &= 0\\
+									dx  &=  x\\
+									\therefore x &= \frac{c}{d}
+							\end{align*}
+									Let
+\begin{equation}
+ f_1= y-x^2       \label{c4}
+\end{equation}
+and
+
+\begin{equation}
+ f_2= x-2         \label{c5}
+\end{equation}
+Taking a partial derivative of \ref{c4} and \ref{c5} w. r. t. $x$ and $y$
+
+ \(
+   B=
+	\begin{pmatrix}
+			   \frac{\partial f_1}{\partial x} & \frac{\partial f_1}{\partial y} \\\\
+               \frac{\partial f_2}{\partial x} & \frac{\partial f_2}{\partial y} \\
+	\end{pmatrix}
+\)
+
+and substitute in the matrix to get,
+\begin{equation}
+B=
+  \begin{pmatrix}
+    {\begin{array}{cc}
+   -2x & 1 \\
+   1 & 0 \\
+  \end{array} }\end{pmatrix} \label{c6}
+\end{equation}
+
+solving the matrix (\ref{c6}) at (2,4), we have:
+
+\begin{equation}
+B=
+   \begin{pmatrix}
+   		{\begin{array}{cc}
+   			-4 & 1 \\
+  			 1 & 0 \\
+ 			 \end{array} }
+   \end{pmatrix}
+\end{equation}
+
+
+\begin{equation}
+\bigg(\begin{smallmatrix}\frac{d x}{dt}  \\\\\frac{d y}{dt}  \end{smallmatrix}\bigg)= \begin{pmatrix} {\begin{array}{cc}
+   -4 & 1 \\
+   1 & 0 \\
+  \end{array} } \end{pmatrix} \bigg(\begin{smallmatrix} x \\\\y \end{smallmatrix}\bigg)  
+\end{equation}
+Hence shown.
 							\item[(iii)] We find the eigenvalue and eigenvector of the linearized system,  and the character of the equilibrium.
+	
+	 We are required to find Eigenvalues using the matrix we have found.
+
+\begin{equation}
+B=
+  \left[ {\begin{array}{cc}
+   -4 & 1 \\
+   1 & 0 \\
+  \end{array} } \right]
+\end{equation}
+
+
+\begin{equation}
+\lambda^2 - tr(B)\lambda + det(B) =0  \label{c8}
+\end{equation}
+replacing for $tr(B)=-4$ and $ det(B)=-1$ in equation (\ref{c8}),
+
+\begin{equation}
+\lambda^2 + 4\lambda -1 =0  \label{c9}
+\end{equation}
+To find eigen values we solve (\ref{c9}) to get
+\begin{eqnarray*}
+\lambda_1 &=& \sqrt{5}-2  \\
+\lambda_2 &=& -(2 + \sqrt{5})\\
+\end{eqnarray*}
+
+using  $(B- \lambda I)\vec{x} = 0$ to get eigenvector
+
+if $\lambda_1 = \sqrt{5}-2 $:
+
+
+\begin{equation}
+ \begin{pmatrix}{\begin{array}{cc}
+   -2-\sqrt{5} & 1 \\
+   1 & 2 - \sqrt{5} \\
+  \end{array} } \end{pmatrix}\bigg(\begin{smallmatrix} x \\\\y \end{smallmatrix}\bigg)= \bigg(\begin{smallmatrix} 0 \\\\ 0 \end{smallmatrix}\bigg)
+\end{equation}
+
+and
+\begin{equation*}
+( -2-\sqrt{5})x  + y = 0\Rightarrow y=( 2+ \sqrt{5})x.
+\end{equation*}
+Letting $x =\alpha$  so that $y=( 2+ \sqrt{5})\alpha $ and then
+
+\begin{equation*}
+v_1=\bigg(\begin{smallmatrix} x \\\\ y \end{smallmatrix}\bigg)=\alpha \bigg(\begin{smallmatrix} 1 \\\\  2+ \sqrt{5} \end{smallmatrix}\bigg)=\bigg(\begin{smallmatrix} 1 \\\\  2+ \sqrt{5} \end{smallmatrix}\bigg)
+\end{equation*}
+if $\alpha=1$
+
+
+
+
+
+If $\lambda_1 = -(2 + \sqrt{5})$, we have
+
+
+
+\begin{equation}
+ \begin{pmatrix}  {\begin{array}{cc}
+   -2+\sqrt{5} & 1 \\
+   1 & 2 + \sqrt{5} \\
+  \end{array} } \end{pmatrix}\bigg(\begin{smallmatrix} x \\\\y \end{smallmatrix}\bigg)= \bigg(\begin{smallmatrix} 0 \\\\ 0 \end{smallmatrix}\bigg)
+\end{equation}
+
+and
+\begin{equation*}
+( -2+\sqrt{5})x  + y = 0\Rightarrow y=( 2- \sqrt{5})x.
+\end{equation*}
+Letting $x =\alpha$  so that $y=( 2- \sqrt{5})\alpha $ and then
+
+\begin{equation*}
+v_2=\bigg(\begin{smallmatrix} x \\\\ y \end{smallmatrix}\bigg)=\alpha \bigg(\begin{smallmatrix} 1 \\\\  2- \sqrt{5} \end{smallmatrix}\bigg)=\bigg(\begin{smallmatrix} 1 \\\\  2- \sqrt{5} \end{smallmatrix}\bigg)
+\end{equation*}
+if $\alpha=1$
+
+
+The general solution:
+\[
+  \begin{pmatrix} x(t)\\ y(t) \end{pmatrix}
+  =C_1e^{\lambda_1 t}\vec{v_1} + C_2 e^{\lambda_2 t}\vec{v_2}    
+\]
+
+\[
+  \begin{pmatrix} x(t)\\ y(t) \end{pmatrix}
+  =C_1e^{(-2 + \sqrt{5}) t}\begin{pmatrix} 1 \\ 2+\sqrt{5} \end{pmatrix}  + C_2 e^{(-2 - \sqrt{5}) t}\begin{pmatrix} 1 \\ 2 - \sqrt{5} \end{pmatrix}    
+\]
+
+
+\begin{equation}
+x(t)= C_1e^{(-2 + \sqrt{5})t}  + C_2e^{(-2 - \sqrt{5})t}    \label{c9}
+\end{equation}
+and
+\begin{equation}
+y(t)= C_1(2 + \sqrt{5})e^{(-2 + \sqrt{5})t} + C_2(2 - \sqrt{5})e^{(-2 - \sqrt{5})t}    \label{c10}
+\end{equation}
+
+
+
+
+It is a saddle point and equilibrium point stability is unstable.
 							\item[(iv)] Given the dynamical systems above the $4^{th}$ order Runge-Kutta solution is plotted below.
 
 					\begin{figure}[!h]
@@ -155,4 +336,5 @@ Given
 										\label{fig:q5}
 								\end{figure}
 \end{enumerate}
+
 \end{document}
