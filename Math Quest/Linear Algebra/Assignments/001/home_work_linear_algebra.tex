@@ -1,0 +1,45 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\author{Yusuf Brima}
+\title{Linear Algebra}
+\begin{document}
+\section*{Exercise 3}
+If  we have a linear model  
+\begin{equation}
+			\mathbf{y} =  \mathbf{w}  \cdot  \mathbf{x} 
+\end{equation}
+to show that 
+\begin{equation}
+    \mathbf{w}  =    \langle \mathbf{x}  \mathbf{x}   \rangle^{-1} \cdot    \langle \mathbf{x}  \mathbf{y} \rangle
+\end{equation}
+we define the mean squared loss as follow
+\begin{equation}
+	\mathcal{L}\left( \mathbf{x}^\mu  \mathbf{y}^\mu   \right) =  \frac{1}{2}  \sum_{\mu = 1}^n  \left(    \mathbf{y}^\mu   -  \mathbf{w} \cdot  \mathbf{x}^\mu   \right)^2
+\end{equation}
+where 
+\begin{equation}
+\langle \mathbf{x}  \mathbf{x}   \rangle :=  \frac{1}{n} \sum_{\mu = 1}^n  \mathbf{x}^\mu  \mathbf{x}^\mu
+\end{equation}
+and 
+\begin{equation}
+\langle \mathbf{x}  \mathbf{y}   \rangle :=  \frac{1}{n} \sum_{\mu = 1}^n  \mathbf{xy}^\mu  \mathbf{y}^\mu
+\end{equation}
+Solution
+\begin{proof}
+\begin{align*}
+	\mathcal{L}\left( \mathbf{x}^\mu  \mathbf{y}^\mu   \right) &=  \frac{1}{2}  \sum_{\mu = 1}^n    \left(    \mathbf{y}^\mu   -  \mathbf{w} \cdot  \mathbf{x}^\mu   \right)^2\\
+ \frac{\partial  \mathcal{L}  }{  \partial  \mathbf{w}  } &=   \frac{\partial  }{  \partial  \mathbf{w}  } \left(  \left(    \mathbf{y}^\mu   -  \mathbf{w} \cdot  \mathbf{x}^\mu   \right)^2     \right)\\
+ &=  \frac{1}{2}  \left[    \left(    \mathbf{y}   -  \mathbf{w} \cdot  \mathbf{x}  \right)^2   +    \left(    \mathbf{y}^2   -  \mathbf{w} \cdot  \mathbf{x}^2  \right)^2 +  \cdots +  \left(    \mathbf{y}^n  -  \mathbf{w} \cdot  \mathbf{x}^n   \right)^2   \right]\\
+ &=   -\mathbf{xy}  + \mathbf{wx^2}   -  \mathbf{x^2y^2} +  \cdots  +   \mathbf{x^ny^n}  + \mathbf{wx^{2n}} = 0\\
+\mathbf{w}\left(   \mathbf{x^2}  + \mathbf{x^4}   +  \cdots  +  \mathbf{x^{2n}}  \right) &=  \mathbf{xy}  + \mathbf{x^2y^2} +  \cdots + \mathbf{x^ny^n}\\
+\mathbf{w} &=  \frac{    \mathbf{xy}  + \mathbf{x^2y^2} +  \cdots + \mathbf{x^ny^n} }{ \left(   \mathbf{x^2}  + \mathbf{x^4}   +  \cdots  +  \mathbf{x^{2n}}  \right)}\\
+\mathbf{w} &=  \frac{   \langle  \mathbf{xy} \rangle}{  \langle   \mathbf{xx} \rangle}\\
+\therefore  \mathbf{w} &=   \langle   \mathbf{xx} \rangle^{-1}    \langle  \mathbf{xy} \rangle 
+\end{align*}
+\end{proof}
+\end{document}
