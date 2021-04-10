@@ -1,0 +1,346 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Template for AIMS Rwanda Assignments         %%%              %%%
+%%% Author:   AIMS Rwanda tutors                             %%%   ###        %%%
+%%% Email: tutors2017-18@aims.ac.rw                               %%%   ###        %%%
+%%% Copyright: This template was designed to be used for    %%% #######      %%%
+%%% the assignments at AIMS Rwanda during the academic year %%%   ###        %%%
+%%% 2017-2018.                                              %%%   #########  %%%
+%%% You are free to alter any part of this document for     %%%   ###   ###  %%%
+%%% yourself and for distribution.                          %%%   ###   ###  %%%
+%%%                                                         %%%              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%% Ensure that you do not write the questions before each of the solutions because it is not necessary. %%%%%% 
+
+\documentclass[12pt,a4paper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% packages %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[all]{xy}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{psfrag}
+\usepackage{mathrsfs}
+\usepackage{actuarialangle}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+%%%%%%%%%%%%%%%%%%%%% students data %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\student}{Yusuf Brima}
+\newcommand{\course}{Numerical Methods}
+\newcommand{\assignment}{1}
+
+%%%%%%%%%%%%%%%%%%% using theorem style %%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{exa}[thm]{Example}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{coro}[thm]{Corollary}
+\newtheorem{quest}{Question}[section]
+
+%%%%%%%%%%%%%%  Shortcut for usual set of numbers  %%%%%%%%%%%
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%% title page %%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=\textwidth]{aims_rwanda.jpg}
+%\end{figure}
+\begin{center}
+\textbf{AFRICAN INSTITUTE FOR MATHEMATICAL SCIENCES \\[0.5cm]
+(AIMS RWANDA, KIGALI)}
+\vspace{1.0cm}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%% assignment information %%%%%%%%%%%%%%%%
+\noindent
+\rule{17cm}{0.2cm}\\[0.3cm]
+Name: \student \hfill Assignment Number: \assignment\\[0.1cm]
+Course: \course \hfill Date: \today\\
+\rule{17cm}{0.05cm}
+\vspace{1.0cm}
+\section*{Exercise 1}
+Considering the following model
+\begin{align*}
+ v^{\prime \prime \prime}  =  v(t) v^\prime(t) - s(t) \left(   v^{\prime \prime} \right)^2 \quad  \forall  t >  0\\
+v(0)  = 1, \quad v^\prime(0)  =  0,  \quad v \prime \prime (0)  =  2
+\end{align*}
+\begin{enumerate}
+  \item 
+  We let 
+\begin{align*}
+  y(t)  &=  v ^\prime (t)\\
+  y^ \prime (t)  &= x(t)  =  v^{\prime \prime}(t)\\
+  \text{ and }  x^\prime (t)  &=   v^{\prime \prime \prime}
+\end{align*}
+we therefore get the following system 
+\begin{align*}
+ v ^\prime (t)  &=    y(t)  \\
+   y^ \prime (t)  &=   x(t)   \\
+   x^\prime (t)   &=   v(t)  y(t)   - s(t)  (x(t)))^2\\
+   \text{ with the following initial conditions }\\
+  &  v(0)  =  1 , \quad y(0)   =  0, \quad  x(0)   =  2
+\end{align*}
+thus 
+\begin{align*}
+Y^\prime(t)  &= \begin{pmatrix}
+     v^\prime (t) \\
+     y^\prime (t) \\
+     x^\prime (t)
+\end{pmatrix}\\
+\text{ and } \\
+F\left(  t, Y\right)  &=  \begin{pmatrix}
+		y(t)\\
+		x(t)\\
+		v(t) y(t)  - s(t) \left(    x(t)  \right)^2
+\end{pmatrix} \quad \quad \left( P \right) \\
+\text{ and } \\
+Y\left( 0  \right)   &=  \begin{pmatrix}
+		1\\
+		0\\
+		2
+\end{pmatrix}
+\end{align*}
+\item
+The explicit Mid-point scheme solution to (P)  using $\delta t_n   =  \delta t$ is as follows
+\begin{align*}
+ \begin{pmatrix}
+     v^\prime (t) \\
+     y^\prime (t) \\
+     x^\prime (t)
+\end{pmatrix}   &=  \begin{pmatrix}
+  w(t)  \\
+  z(t) \\
+  v(t) w(t)  -  s(t)  \left(  z(t) \right)^2
+\end{pmatrix}\\
+Y^\prime (t) &=   \begin{pmatrix}
+     v^\prime (t) \\
+     y^\prime (t) \\
+     x^\prime (t)
+\end{pmatrix} \\
+Y &=  \begin{pmatrix}
+    v\\
+    w\\
+    z
+\end{pmatrix}\\
+F(t,v,w,z)  &=  \begin{pmatrix}
+w \\
+z\\
+vw  - s(t) z^2
+\end{pmatrix}\\
+Y(0)  &=  Y_0 \\
+t_{n  + \frac{1}{2}}  &=  t_n  + \frac{1}{2}  \delta t\\
+Y_{n  + \frac{1}{2}} &=  \begin{pmatrix}
+   v_{n  + \frac{1}{2}}\\
+   w_{n  + \frac{1}{2}}\\
+   z_{n  + \frac{1}{2}} 
+\end{pmatrix} = \begin{pmatrix}
+     v_n \\
+     w_n \\
+     z_n
+   \end{pmatrix}    + \frac{\delta t} {2}  \begin{pmatrix}
+       w_n \\
+       z_n \\
+       v_n  w_n  -  s(t_n)  z_n^2
+   \end{pmatrix}\\
+   y_{n+1}  &=  \begin{pmatrix}
+      v_{n+1}\\
+      w_{n+1}\\
+      z_{n+1}
+   \end{pmatrix} +   \begin{pmatrix}
+        w_{n  + \frac{1}{2}}\\
+        z_{n  + \frac{1}{2}}\\
+        v_{n  + \frac{1}{2}} w_{n  + \frac{1}{2}} -  s_{t_{n  + \frac{1}{2}}}  z_{n  + \frac{1}{2}}
+   \end{pmatrix}
+\end{align*}
+\item Taking $t_0  = 0,  \delta t  = \frac{1}{2} ,  s(t)    =  1+ t^2$ to solve for $v_1  \approx v( t_1) $ and $v_2  \approx   v(t_2) $ with $n =  0$.
+\begin{align*}
+  Y(0)   =  Y_0   = \begin{pmatrix}
+     1\\
+     0\\
+     2
+  \end{pmatrix}\\
+  t_{\frac{1}{2}}  =  t_0  + \frac{\delta t}{2}   =  \frac{0.5}{2}   =  \frac{1}{4}\\
+  \begin{pmatrix}
+     v_{\frac{1}{2}}   \\
+     w_{\frac{1}{2}}\
+     z_{\frac{1}{2}}
+  \end{pmatrix} &=  \begin{pmatrix}
+    1\\
+    0\\
+    2
+  \end{pmatrix}     + \frac{1}{4}  \begin{pmatrix}
+     0\\
+     2\\
+     -4
+  \end{pmatrix}  =  \begin{pmatrix}
+    1\\
+    \frac{1}{2}\\
+    1
+  \end{pmatrix}\\
+  \begin{pmatrix}
+   v_1\\
+   w_1  \\
+   z_1 
+  \end{pmatrix}  &=    \begin{pmatrix}
+    1\\
+    0\\
+    2
+  \end{pmatrix}   + \frac{1}{2}    + \begin{pmatrix}
+    \frac{1}{2}\\
+    1\\
+    \frac{1}{2}   -  ( 1 + (\frac{1}{4})^2)
+  \end{pmatrix} =  \begin{pmatrix}
+  1.25\\
+  0.5\\
+  1.72
+  \end{pmatrix}
+\end{align*}
+For $ n  =  1  v_2 \approx  v(t_2)  $
+\begin{align*}
+    t_{ \frac{3}{2}}    &=  t_1 + \frac{\delta  t}{  2}    =  0.5   + \frac{0.5}{2}   =  \frac{3}{4}\\
+\begin{pmatrix}
+      v_{ \frac{3}{2}}  \\
+     w _{ \frac{3}{2}} \\
+     z_{ \frac{3}{2}} 
+\end{pmatrix}  &=  \begin{pmatrix}
+     1.25\\
+     0.5\\
+     1.72
+\end{pmatrix} + \frac{1}{4}  \begin{pmatrix}
+     0.5\\
+     1.72\\
+     (1.25 \times 0.5)   -  ( 1 + 0.5^2  \times 1.72^2) 
+\end{pmatrix} =  \begin{pmatrix}
+     1.375\\
+     0.93\\
+     0.95
+\end{pmatrix}\\
+\begin{pmatrix}
+    v_2\\
+    w_2\\
+    z_2
+\end{pmatrix} &=  \begin{pmatrix}
+     1.25\\
+     0.5\\
+     1.72
+\end{pmatrix} + \frac{1}{2}  \begin{pmatrix}
+1.375\\
+0.93\\
+(1.375 \times 0.93)  -  (1 + 0.75^2) \times 0.95^2)
+\end{pmatrix} =  \begin{pmatrix}
+    1.9375\\
+    0.965\\
+    1.6543
+\end{pmatrix}
+\end{align*}
+\end{enumerate}
+\section*{Exercise 2}
+Given the conservation of the energy of a thin spherical air layer (as a model below)
+\begin{equation}
+C \frac{dT}{dt}    =  \frac{  (1 - \alpha ) S_0}{ 4}    -  \epsilon  \sigma   T^4  \quad \text{ where }   \forall t \in  [0,310] \text{ and } T(0)  =  270 , \quad T  =  T(t)
+    \label{eq:ebm}
+\end{equation}
+where the following quantities are used
+\begin{align*}
+    C  =  85, \alpha =  0.3,  S_0   =  1367,  \epsilon   = 0.6,  \sigma =   5.67 \times 10^{-8} \\
+    T  = T(t)  \quad \text{ globally averaged sufrace temperature }
+\end{align*}
+\begin{enumerate}
+\item To find  the equilibrium temperature $T_{eq}$.
+\begin{align*}
+    \frac{dT}{dt}     =  0\\
+    \implies \frac{  (1 - \alpha ) S_0}{ 4}    -  \epsilon  \sigma   T^4   = 0 \\
+    \implies T_{eq}  =  \sqrt[4]{    \frac{   (1  -  \alpha )  S_0 }{ 4 \epsilon  \sigma   }   }
+\end{align*}
+\item To write $T(t) = Teq + \tilde{T }(t)$  near the equilibrium, where $ \tilde{T }(t)$ is a small time-dependent temperature perturbation$ (| \tilde{T } | << T_{eq})$.  And to  prove that
+\begin{equation}
+C \frac{d\tilde{T}}{dt}    =  \frac{  (1 - \alpha ) S_0}{ 4}    -  \epsilon  \sigma    \left( T_{eq}  +   \tilde{T}    \right)^4
+\end{equation}
+\begin{proof}
+    \begin{align*}
+        T(t)  &=  T_{eq}  + \tilde{T} \quad   |\tilde{T} <<  T_{eq}|\\
+        \frac{dT}{ dt}   &=  \frac{dT_{eq}}{   dt}   +  \frac{d\tilde{T}}{dt}  \\
+        \implies \frac{dT}{ dt}   &=   \frac{d\tilde{T}}{dt}  \\
+        C \frac{dT}{dt}    &=  \frac{  (1 - \alpha ) S_0}{ 4}    -  \epsilon  \sigma   T^4 \\
+        C \frac{d\tilde{T}}{dt}    &=  \frac{  (1 - \alpha ) S_0}{ 4}    -  \epsilon  \sigma    \left( T_{eq}  +   \tilde{T}    \right)^4
+    \end{align*}
+\end{proof}
+\item Assuming that 
+\begin{equation}
+      \left(      1 + \frac{\tilde{T}}{T_{eq}}  \right)^4   =   \left(     1  +  \frac{4\tilde{T}}{T_{eq}}   \right)
+\end{equation}
+\begin{proof}
+    \begin{align*}
+        \frac{d\tilde{T}}{dt}    &=   - \left(    \frac{  4 \epsilon  \sigma T_{eq}^3   }{C}     \right)  \tilde{T}\\
+        C \frac{dT}{dt}   &=    \frac{(1-\alpha) S_0}{4}     -  \epsilon  \sigma   T_{eq}^4      \left(      1 + \frac{\tilde{T}}{T_{eq}}  \right)^4 \\
+        &=  \frac{(1-\alpha) S_0}{4}     -  \epsilon  \sigma   T_{eq}^4      \left(      1 + \frac{4\tilde{T}}{T_{eq}}  \right)\\
+        &=  \frac{(1-\alpha) S_0}{4}     -  \epsilon  \sigma   T_{eq}^4      \left(     4 \epsilon   \sigma   T_{eq}^3    \right) \tilde{T}\\
+        \implies C \frac{d \tilde{T}}{dt}   &=  -  \left(     4 \epsilon   \sigma   T_{eq}^3    \right) \tilde{T}\\
+       \implies   \frac{d \tilde{T}}{dt}    &=   -  \left(     \frac{
+       4 \epsilon   \sigma   T_{eq}^3}{C}    \right) \tilde{T}
+    \end{align*}
+\end{proof}
+\item Given $\tilde{T}(0) = 10, A  =  10,  t \in [0,310] $, we  find the exact solution of \eqref{eq:ebm} as follows.
+\begin{align*}
+\frac{d \tilde{T}}{dt}    &=   -  \left(     \frac{
+       4 \epsilon   \sigma   T_{eq}^3}{C}    \right) \\
+       \int \frac{d \tilde{T}}{dt}    &=   -  \left(     \frac{
+       4 \epsilon   \sigma   T_{eq}^3}{C}    \right) \int dt \\
+       \ln(\tilde{T})   &=   -  \left(     \frac{
+       4 \epsilon   \sigma   T_{eq}^3}{C}    \right) t + A_1\\
+       \tilde{T}  &=      A \exp^{  -  \left(     \frac{
+       4 \epsilon   \sigma   T_{eq}^3}{C}    \right) t      }\\
+       \tilde{T}  &=  10   \exp^{  -  \left(     \frac{
+       4 \epsilon   \sigma   T_{eq}^3}{C}    \right) t      }
+\end{align*}
+\item To solve \eqref{eq:ebm} numerically,  one considering the following scheme
+\begin{align*}
+(P) \left\{
+                \begin{array}{ll}
+               			y_0  =  y(t_0)\\
+               			K_1 =  f(t_n,y_n)\\
+               			t_{n  + \frac{3}{4}}  = y_n  + \frac{3}{4}  \delta t  K_1\\
+               			K_2  =   f  (t_{n  + \frac{3}{4}}   ,   y_{n  + \frac{3}{4}})\\
+               			y_{n+1}   =   y_n  + \frac{1}{3}  \delta t  (K_1  + 2 K_2)
+                \end{array}
+              \right.
+\end{align*}
+\begin{enumerate}
+			\item[(a)] Prove that (P) is the one-step method.
+				\begin{proof}
+				         
+				         Which means 
+						\begin{align*}
+						       y_{n+1}   &=   y_n  + \frac{1}{3}  \delta t  (K_1  + 2 K_2)   \equiv  y_{n+1}   =   y_n  +  \delta t   \phi (t_n , y_n,  \delta t)\\
+						       y_{n+1}   &=     y_n  + \frac{1}{3}  \delta t \left(   f(t_n,   y_n ) + 2f( t_{n  + \frac{3}{4}}  , y_{n  + \frac{3}{4}}   )    \right)\\
+						       &=   y_n  + \frac{1}{3}     \delta t     \left[    f(t_n  ,  y_n)  +   2f\left(  t_n   +  \frac{3}{4}     \delta  t    ,   y_n   + \frac{3}{4}   \delta t  f(t_n , y_n)    \right)           \right]  \\
+						       &=    y_n   + \frac{1}{3}  \delta t   \phi (t_n , y_n,  \delta t) \\
+						       &   \text{ where }   \phi (t_n , y_n,  \delta t)  =   \left[    f(t_n  ,  y_n)  +   2f\left(  t_n   +  \frac{3}{4}     \delta  t    ,   y_n   + \frac{3}{4}   \delta t  f(t_n , y_n)    \right)           \right] 
+ 						\end{align*}
+				\end{proof}
+			\item[(b)]
+\end{enumerate}
+\end{enumerate}
+\end{document}
